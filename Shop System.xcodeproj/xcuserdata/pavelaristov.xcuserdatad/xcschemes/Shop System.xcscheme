@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F96417E1DCBA0DE006CCBF6"
-               BuildableName = "Shop System.app"
-               BlueprintName = "Shop System"
+               BuildableName = "Shop-System.app"
+               BlueprintName = "Shop-System"
                ReferencedContainer = "container:Shop System.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F96417E1DCBA0DE006CCBF6"
-            BuildableName = "Shop System.app"
-            BlueprintName = "Shop System"
+            BuildableName = "Shop-System.app"
+            BlueprintName = "Shop-System"
             ReferencedContainer = "container:Shop System.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F96417E1DCBA0DE006CCBF6"
-            BuildableName = "Shop System.app"
-            BlueprintName = "Shop System"
+            BuildableName = "Shop-System.app"
+            BlueprintName = "Shop-System"
             ReferencedContainer = "container:Shop System.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F96417E1DCBA0DE006CCBF6"
-            BuildableName = "Shop System.app"
-            BlueprintName = "Shop System"
+            BuildableName = "Shop-System.app"
+            BlueprintName = "Shop-System"
             ReferencedContainer = "container:Shop System.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

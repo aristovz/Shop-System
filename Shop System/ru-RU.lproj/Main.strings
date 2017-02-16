@@ -1,0 +1,156 @@
+
+/* Class = "UITextField"; placeholder = "Количество"; ObjectID = "1Ia-qQ-leV"; */
+"1Ia-qQ-leV.placeholder" = "Количество";
+
+/* Class = "UINavigationItem"; title = "Клиенты"; ObjectID = "1cx-3b-Xrr"; */
+"1cx-3b-Xrr.title" = "Клиенты";
+
+/* Class = "UILabel"; text = "Последний: ---"; ObjectID = "2ue-ON-dhX"; */
+"2ue-ON-dhX.text" = "Последний: ---";
+
+/* Class = "UILabel"; text = "Штрих код"; ObjectID = "5bQ-lP-8K1"; */
+"5bQ-lP-8K1.text" = "Штрих код";
+
+/* Class = "UIButton"; normalTitle = "Поднесите штрих код"; ObjectID = "67h-Hy-p4Z"; */
+"67h-Hy-p4Z.normalTitle" = "Поднесите штрих код";
+
+/* Class = "UIBarButtonItem"; title = "Выход"; ObjectID = "6zT-F4-eb9"; */
+"6zT-F4-eb9.title" = "Выход";
+
+/* Class = "UITextField"; placeholder = "Цена"; ObjectID = "7S6-RI-34Q"; */
+"7S6-RI-34Q.placeholder" = "Цена";
+
+/* Class = "UILabel"; text = "Клиент:"; ObjectID = "8Rb-37-bCv"; */
+"8Rb-37-bCv.text" = "Клиент:";
+
+/* Class = "UINavigationItem"; title = "Сканер"; ObjectID = "9TG-8r-dLP"; */
+"9TG-8r-dLP.title" = "Сканер";
+
+/* Class = "UIButton"; normalTitle = "Добавить"; ObjectID = "Cbs-GO-gAm"; */
+"Cbs-GO-gAm.normalTitle" = "Добавить";
+
+/* Class = "UITextField"; placeholder = "Номер карты"; ObjectID = "E7k-Ca-Zlp"; */
+"E7k-Ca-Zlp.placeholder" = "Номер карты";
+
+/* Class = "UILabel"; text = "Новый продукт"; ObjectID = "FGe-cS-ZSt"; */
+"FGe-cS-ZSt.text" = "Новый продукт";
+
+/* Class = "UINavigationItem"; title = "Отчет"; ObjectID = "H4H-5Y-ddW"; */
+"H4H-5Y-ddW.title" = "Отчет";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "Hht-GJ-jC7"; */
+"Hht-GJ-jC7.text" = "---";
+
+/* Class = "UITextField"; placeholder = "Название"; ObjectID = "INb-yN-3oH"; */
+"INb-yN-3oH.placeholder" = "Название";
+
+/* Class = "UIButton"; normalTitle = "Забыли пароль?"; ObjectID = "KZ2-2K-Uh0"; */
+"KZ2-2K-Uh0.normalTitle" = "Забыли пароль?";
+
+/* Class = "UILabel"; text = "Все категории"; ObjectID = "KrS-KP-tZq"; */
+"KrS-KP-tZq.text" = "Все категории";
+
+/* Class = "UILabel"; text = "Выручка"; ObjectID = "LBy-DU-yn3"; */
+"LBy-DU-yn3.text" = "Выручка";
+
+/* Class = "UILabel"; text = "Название продукта"; ObjectID = "Lhd-EF-xYm"; */
+"Lhd-EF-xYm.text" = "Название продукта";
+
+/* Class = "UITextField"; placeholder = "Телефон"; ObjectID = "Lnl-AD-0U0"; */
+"Lnl-AD-0U0.placeholder" = "Телефон";
+
+/* Class = "UILabel"; text = "Скидка:"; ObjectID = "OEq-xF-2Ln"; */
+"OEq-xF-2Ln.text" = "Скидка:";
+
+/* Class = "UILabel"; text = "Средний чек"; ObjectID = "Ok2-e2-JOS"; */
+"Ok2-e2-JOS.text" = "Средний чек";
+
+/* Class = "UILabel"; text = "--- ₽"; ObjectID = "Owg-4K-tu4"; */
+"Owg-4K-tu4.text" = "--- ₽";
+
+/* Class = "UILabel"; text = "Shop System"; ObjectID = "Q39-bC-nm5"; */
+"Q39-bC-nm5.text" = "Shop System";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "SeD-YZ-o6R"; */
+"SeD-YZ-o6R.text" = "---";
+
+/* Class = "UILabel"; text = "Продавец:"; ObjectID = "TIE-WP-NUc"; */
+"TIE-WP-NUc.text" = "Продавец:";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "Uiq-z3-HAd"; */
+"Uiq-z3-HAd.text" = "---";
+
+/* Class = "UILabel"; text = "Гостей"; ObjectID = "VfD-aw-3Oh"; */
+"VfD-aw-3Oh.text" = "Гостей";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "YMH-oK-As7"; */
+"YMH-oK-As7.placeholder" = "Password";
+
+/* Class = "UINavigationItem"; title = "Склад"; ObjectID = "Z9O-We-SGk"; */
+"Z9O-We-SGk.title" = "Склад";
+
+/* Class = "UINavigationItem"; title = "Отчет"; ObjectID = "aog-P5-O1f"; */
+"aog-P5-O1f.title" = "Отчет";
+
+/* Class = "UITextField"; placeholder = "Штрихкод"; ObjectID = "bge-Mc-ar4"; */
+"bge-Mc-ar4.placeholder" = "Штрихкод";
+
+/* Class = "UILabel"; text = "Новый клиент"; ObjectID = "c9e-FN-HQx"; */
+"c9e-FN-HQx.text" = "Новый клиент";
+
+/* Class = "UITextField"; placeholder = "Имя"; ObjectID = "cD0-Lb-eO1"; */
+"cD0-Lb-eO1.placeholder" = "Имя";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "dj0-4i-AA1"; */
+"dj0-4i-AA1.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "gTW-bM-hZa"; */
+"gTW-bM-hZa.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Закупка"; ObjectID = "gn7-w9-dWm"; */
+"gn7-w9-dWm.placeholder" = "Закупка";
+
+/* Class = "UILabel"; text = "--- ₽"; ObjectID = "iKS-Uv-poC"; */
+"iKS-Uv-poC.text" = "--- ₽";
+
+/* Class = "UITextField"; placeholder = "Категория"; ObjectID = "ic2-hR-vU4"; */
+"ic2-hR-vU4.placeholder" = "Категория";
+
+/* Class = "UILabel"; text = "--- ₽"; ObjectID = "nNt-Ak-7vu"; */
+"nNt-Ak-7vu.text" = "--- ₽";
+
+/* Class = "UILabel"; text = "result"; ObjectID = "qM6-ka-QNA"; */
+"qM6-ka-QNA.text" = "result";
+
+/* Class = "UISegmentedControl"; rvf-Hf-PHg.segmentTitles[0] = "День"; ObjectID = "rvf-Hf-PHg"; */
+"rvf-Hf-PHg.segmentTitles[0]" = "День";
+
+/* Class = "UISegmentedControl"; rvf-Hf-PHg.segmentTitles[1] = "Месяц"; ObjectID = "rvf-Hf-PHg"; */
+"rvf-Hf-PHg.segmentTitles[1]" = "Месяц";
+
+/* Class = "UISegmentedControl"; rvf-Hf-PHg.segmentTitles[2] = "Год"; ObjectID = "rvf-Hf-PHg"; */
+"rvf-Hf-PHg.segmentTitles[2]" = "Год";
+
+/* Class = "UILabel"; text = "Прибыль"; ObjectID = "t0V-nU-gYw"; */
+"t0V-nU-gYw.text" = "Прибыль";
+
+/* Class = "UIButton"; normalTitle = "Добавить"; ObjectID = "vbI-gl-kXg"; */
+"vbI-gl-kXg.normalTitle" = "Добавить";
+
+/* Class = "UILabel"; text = "Семизаров Василий"; ObjectID = "vbW-6u-Ldm"; */
+"vbW-6u-Ldm.text" = "Семизаров Василий";
+
+/* Class = "UIButton"; normalTitle = "Добавить"; ObjectID = "wLc-OO-ulE"; */
+"wLc-OO-ulE.normalTitle" = "Добавить";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "wiM-cy-eqY"; */
+"wiM-cy-eqY.text" = "---";
+
+/* Class = "UINavigationItem"; title = "Каналы"; ObjectID = "xMH-ID-8yM"; */
+"xMH-ID-8yM.title" = "Каналы";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "ymp-fr-eYq"; */
+"ymp-fr-eYq.placeholder" = "Username";
+
+/* Class = "UIButton"; normalTitle = "Вход"; ObjectID = "z1x-Oh-stj"; */
+"z1x-Oh-stj.normalTitle" = "Вход";

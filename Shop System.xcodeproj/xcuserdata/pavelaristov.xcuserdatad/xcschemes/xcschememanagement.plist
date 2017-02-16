@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Shop-System Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>2F9641A01DCBA0DE006CCBF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2FDC05841DF1B1A200A4F0CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

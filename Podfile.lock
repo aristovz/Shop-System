@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Charts (3.0.0):
+    - Charts/Core (= 3.0.0)
+  - Charts/Core (3.0.0)
+  - DropDown (2)
+  - FontAwesome.swift (0.9.0)
+  - iCarousel (1.8.2)
+  - Realm (2.0.2):
+    - Realm/Headers (= 2.0.2)
+  - Realm/Headers (2.0.2)
+  - RealmSwift (2.0.2):
+    - Realm (= 2.0.2)
+  - SCLAlertView (0.7.0)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Charts (from `https://github.com/danielgindi/Charts.git`, branch `master`)
+  - DropDown
+  - FontAwesome.swift
+  - iCarousel
+  - RealmSwift (~> 2.0.2)
+  - SCLAlertView
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Charts:
+    :branch: master
+    :git: https://github.com/danielgindi/Charts.git
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: e51bfb07f0ddf4012250ac5d635d3f5dd5b3c973
+    :git: https://github.com/danielgindi/Charts.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Charts: 3f0da988b104c8e5f069fcef55da699f597dac67
+  DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  FontAwesome.swift: 8744c24147e925c61e68d313a2837c7298e2a43f
+  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
+  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
+  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: a2872eab59ae3ce892669c2ca3699426a42731fc
+
+COCOAPODS: 1.2.0.beta.1

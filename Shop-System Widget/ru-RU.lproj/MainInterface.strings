@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "--- ₽"; ObjectID = "BKc-VO-xFj"; */
+"BKc-VO-xFj.text" = "--- ₽";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "Icf-OG-gZp"; */
+"Icf-OG-gZp.text" = "---";
+
+/* Class = "UIButton"; normalTitle = "Обновить"; ObjectID = "Oe0-Rc-gsi"; */
+"Oe0-Rc-gsi.normalTitle" = "Обновить";
+
+/* Class = "UILabel"; text = "Обновлено в ---"; ObjectID = "RUD-DW-zkD"; */
+"RUD-DW-zkD.text" = "Обновлено в ---";
+
+/* Class = "UILabel"; text = "Выручка"; ObjectID = "d78-ND-VIh"; */
+"d78-ND-VIh.text" = "Выручка";
+
+/* Class = "UILabel"; text = "Гостей"; ObjectID = "dWv-Z7-fA4"; */
+"dWv-Z7-fA4.text" = "Гостей";
+
+/* Class = "UILabel"; text = "Прибыль"; ObjectID = "xZd-ri-LSQ"; */
+"xZd-ri-LSQ.text" = "Прибыль";
+
+/* Class = "UILabel"; text = "--- ₽"; ObjectID = "z7F-5J-Xkg"; */
+"z7F-5J-Xkg.text" = "--- ₽";

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ProductsController.parentCategory.getter:ProductsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentCategory!.parentID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.viewDidLoad() -&gt; ():AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allSumLabel.isUserInteractionEnabled ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.(fillByMonth() -&gt; ()).(closure #1):AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "today">
+            </PersistentString>
+            <PersistentString
+               value = "end">
+            </PersistentString>
+            <PersistentString
+               value = "Calendar.current.date(byAdding: .month, value: 2, to: Date().startOfMonth()!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.OrdersManager.(getAllOrders(requestEnd : ([Order]) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "order[&quot;clientID&quot;].int">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;orders&quot;].array[0].dictionary[&quot;clientID&quot;].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Alert.wait.getter:Alert.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static API.TransactionsManager.(addCode(id : Int, code : String, requestEnd : (Bool) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.OrdersManager.(getAllOrdersWithSales(requestEnd : ([Order]) -&gt; ()) -&gt; ()).(closure #1).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(json[&quot;orders&quot;].arrayValue[0][&quot;date&quot;]).dateFromISO8601">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportCell.observeValue(forKeyPath : String?, of : Any?, change : [NSKeyValueChangeKey : Any]?, context : UnsafeMutableRawPointer?) -&gt; ():ReportCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frame.origin.x">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClientsController.viewWillAppear(Bool) -&gt; ():ClientsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "refreshControl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ScanerController.(addCode(code : String) -&gt; ()).(closure #1):ScanerController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.tableView(UITableView, willDisplay : UITableViewCell, forRowAt : IndexPath) -&gt; ():ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.tableView.contentSize.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.SalesManager.getAllSales(requestEnd : ([Sale]) -&gt; ()) -&gt; ():API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Global.access_token!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChartViewBase.getHighlightByTouchPoint(CGPoint) -&gt; Highlight?:ChartViewBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.highlighter?.getHighlight(x: pt.x, y: pt.y)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.(refreshData() -&gt; ()).(closure #1):ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dates">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.OrdersManager.getAllOrdersWithSalesInDays(days : [Date], requestEnd : ([Order]) -&gt; ()) -&gt; ():API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSON(days)[0].description">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportCell.layoutSubviews() -&gt; ():ReportCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.contentSize.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BarLineChartViewBase.drawGridBackground(context : CGContext) -&gt; ():BarLineChartViewBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "drawBordersEnabled">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.carousel(iCarousel, viewForItemAt : Int, reusing : UIView?) -&gt; UIView:AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "itemView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChartViewBase.data.setter:ChartViewBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_data.dataSets">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClientsController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ClientsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "clients.count&#10;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DefaultValueFormatter.stringForValue(Double, entry : ChartDataEntry, dataSetIndex : Int, viewPortHandler : ViewPortHandler?) -&gt; String:DefaultValueFormatter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BarLineChartViewBase.draw(CGRect) -&gt; ():BarLineChartViewBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "marker">
+            </PersistentString>
+            <PersistentString
+               value = "_xAxis.isDrawLimitLinesBehindDataEnabled">
+            </PersistentString>
+            <PersistentString
+               value = "renderer!.drawValues(context: context)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportCell.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ReportCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "localSumma">
+            </PersistentString>
+            <PersistentString
+               value = "currentSale.initialPrice * Double(currentSale.count)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.(getAllWorkers(requestEnd : ([Worker]) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(worker[&quot;id&quot;] as! NSString)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.calendar(FSCalendar, imageFor : Date) -&gt; UIImage?:AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "#imageLiteral(resourceName: &quot;current item&quot;).size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized static API.(getAllWorkers(requestEnd : ([Worker]) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSON(value)[&quot;workers&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ScanerController.viewDidLoad() -&gt; ():ScanerController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentChannel[&quot;name&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.(refreshData() -&gt; ()).(closure #1).(closure #2).(closure #1).(closure #1).(closure #1).(closure #1):ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+            <PersistentString
+               value = "workers">
+            </PersistentString>
+            <PersistentString
+               value = "categories">
+            </PersistentString>
+            <PersistentString
+               value = "clients">
+            </PersistentString>
+            <PersistentString
+               value = "sales">
+            </PersistentString>
+            <PersistentString
+               value = "products">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.loadMenuController(parentViewController : UIViewController?) -&gt; ():AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainStoryBoard.instantiateViewController(withIdentifier: &quot;authVC&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.carouselCurrentItemIndexDidChange(iCarousel) -&gt; ():AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView.visibleItemViews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.(viewDidLoad() -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1).(closure #1):ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+            <PersistentString
+               value = "workers">
+            </PersistentString>
+            <PersistentString
+               value = "categories">
+            </PersistentString>
+            <PersistentString
+               value = "sales">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.fillByMonth() -&gt; ():AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "13 - k">
+            </PersistentString>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+            <PersistentString
+               value = "ordersEntires">
+            </PersistentString>
+            <PersistentString
+               value = "orders[0].date">
+            </PersistentString>
+            <PersistentString
+               value = "Global.shortMonth[0]">
+            </PersistentString>
+            <PersistentString
+               value = "orders[0].date &lt;= end!">
+            </PersistentString>
+            <PersistentString
+               value = "Calendar.current.shortMonthSymbols">
+            </PersistentString>
+            <PersistentString
+               value = "Calendar.current.dateComponents(comp, from: start!).month!">
+            </PersistentString>
+            <PersistentString
+               value = "chartView.data">
+            </PersistentString>
+            <PersistentString
+               value = "currentOrders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "clients">
+            </PersistentString>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Date.timeAgo.getter:NSDate+Extension.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "components.hour">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.(tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell).(closure #1):ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sales">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddProductController.addButtonAction(UIButton) -&gt; ():AddProductController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "initialPriceField.text!.replacingOccurrences(of: &quot;,&quot;, with: &quot;.&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProductsController.(viewDidLoad() -&gt; ()).(closure #1).(closure #2):ProductsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.products">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AuthController.(loginAction(UIButton) -&gt; ()).(closure #1):AuthController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AxisBase.getFormattedLabel(Int) -&gt; String:AxisBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "entries">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListOfChannelController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ListOfChannelController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "listOfChannel[indexPath.row][&quot;date&quot;].stringValue.dateFromISO8601!.timeAgo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.(tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell).(closure #2):ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "products">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.ClientsManager.(addClient(card : Int, name : String, discount : Int, phone : String, requestEnd : (Bool) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "JSON.number.getter:SwiftyJSON.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "decimal.intValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NSDateTimeAgoLocalizedStrings(String) -&gt; String:NSDate+Extension.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSLocalizedString(key, tableName: &quot;NSDateTimeAgo&quot;, bundle: bundle, comment: &quot;&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportCell.updateData() -&gt; ():ReportCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.client">
+            </PersistentString>
+            <PersistentString
+               value = "client">
+            </PersistentString>
+            <PersistentString
+               value = "sales">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "IndexAxisValueFormatter.stringForValue(Double, axis : AxisBase?) -&gt; String:IndexAxisValueFormatter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_values">
+            </PersistentString>
+            <PersistentString
+               value = "_valueCount">
+            </PersistentString>
+            <PersistentString
+               value = "Int(value.rounded())">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Order.getSum() -&gt; (sum : Double, profit : Double):Order.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sale.price ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "JSON.int.getter:SwiftyJSON.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.number?.intValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.configure(cell : FSCalendarCell, for : Date, at : FSCalendarMonthPosition) -&gt; ():AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "calendarView.selectedDates">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.OrdersManager.(getAllOrdersWithSalesInDays(days : [Date], requestEnd : ([Order]) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProductsController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:ProductsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "products">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized _fatalErrorMessage(StaticString, StaticString, StaticString, UInt, flags : UInt32) -&gt; Never:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "priceField.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.numberOfSections(in : UITableView) -&gt; Int:ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OrderDetailController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:OrderDetailController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "products">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "JSON.object.setter:SwiftyJSON.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "newValue as? Int">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportCell.client.setter:ReportCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "client">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportCell.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:ReportCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sales.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.ProductsManager.(addProduct(name : String, type : Int, categoryID : Int, price : Double, initialPrice : Double, requestEnd : (Bool) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.SalesManager.(getAllSales(requestEnd : ([Sale]) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sale[&quot;initialPrice&quot;].doubleValue">
+            </PersistentString>
+            <PersistentString
+               value = "currentSale">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.fillShowOrder(index : Int) -&gt; ():AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(format: &quot;%g &#x20bd;&quot;, currValue.avgSum)">
+            </PersistentString>
+            <PersistentString
+               value = "showOrders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportCell.awakeFromNib() -&gt; ():ReportCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "client">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChartViewBase.draw(CGRect) -&gt; ():ChartViewBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_offsetsCalculated">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.OrdersManager.(getAllOrdersWithSalesInDays(days : [Date], requestEnd : ([Order]) -&gt; ()) -&gt; ()).(closure #1).(closure #2):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(response.result.value)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddProductController.selectedCategory.setter:AddProductController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "newValue!.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AuthController.loginAction(UIButton) -&gt; ():AuthController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pass">
+            </PersistentString>
+            <PersistentString
+               value = "username">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Date.dateComponents() -&gt; DateComponents:NSDate+Extension.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Locale.preferredLanguages.first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.(calendarVisible.setter).(closure #1):AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " self.calendarView.selectedDates">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.respondToSwipeGesture(gesture : UIGestureRecognizer) -&gt; ():AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gesture.superclass!">
+            </PersistentString>
+            <PersistentString
+               value = "tapGesture.location(in: calendarView.calendarHeaderView)">
+            </PersistentString>
+            <PersistentString
+               value = "swipeGesture.direction">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.refreshData() -&gt; ():ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "offline">
+            </PersistentString>
+            <PersistentString
+               value = "self.dates">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProductsController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ProductsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "products[currentCategory!.id]!.count">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChartViewBase.highlightValue(Highlight?, callDelegate : Bool) -&gt; ():ChartViewBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_indicesToHighlight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ReportController.viewDidLoad() -&gt; ():ReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+            <PersistentString
+               value = "tabBar?.items![2].title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

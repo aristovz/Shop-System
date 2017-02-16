@@ -7,14 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14C5D3A2E07B677D43A0EB0F /* Pods_Shop_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347DCADC7F6BC6694E99FE7 /* Pods_Shop_System.framework */; };
+		2F32F45E1DCBCE21006E15EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45D1DCBCE21006E15EB /* API.swift */; };
+		2F32F4611DCBCE82006E15EB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4601DCBCE82006E15EB /* Order.swift */; };
+		2F32F4631DCBCF79006E15EB /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4621DCBCF79006E15EB /* Sale.swift */; };
+		2F32F4651DCBCFFE006E15EB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4641DCBCFFE006E15EB /* Product.swift */; };
+		2F32F4671DCBD087006E15EB /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4661DCBD087006E15EB /* Client.swift */; };
+		2F32F4691DCBD0DA006E15EB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4681DCBD0DA006E15EB /* Category.swift */; };
+		2F32F46B1DCBD12E006E15EB /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F46A1DCBD12E006E15EB /* Worker.swift */; };
+		2F3E16391DD0624E00DC0FEC /* ScanerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E16381DD0624E00DC0FEC /* ScanerController.swift */; };
+		2F3E163B1DD0779C00DC0FEC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3E163A1DD0779C00DC0FEC /* AudioToolbox.framework */; };
+		2F3FD27A1DF1CA8900AFE5CF /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4621DCBCF79006E15EB /* Sale.swift */; };
+		2F3FD27B1DF1CA9D00AFE5CF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4641DCBCFFE006E15EB /* Product.swift */; };
+		2F3FD27C1DF1CAA000AFE5CF /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F46A1DCBD12E006E15EB /* Worker.swift */; };
+		2F3FD27D1DF1CAA700AFE5CF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45A1DCBC8A9006E15EB /* Global.swift */; };
+		2F3FD27E1DF1CAAD00AFE5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641821DCBA0DE006CCBF6 /* AppDelegate.swift */; };
+		2F3FD27F1DF1CAC000AFE5CF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4661DCBD087006E15EB /* Client.swift */; };
+		2F3FD2801DF1CACB00AFE5CF /* ProductCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0BDD1DD7A41300D42A21 /* ProductCode.swift */; };
+		2F3FD2811DF1CAD500AFE5CF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4681DCBD0DA006E15EB /* Category.swift */; };
+		2F3FD2821DF1CAF900AFE5CF /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */; };
+		2F3FD2831DF1CDE800AFE5CF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45A1DCBC8A9006E15EB /* Global.swift */; };
+		2F41E7C21DF1FFF400C35A7C /* AddClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E7C11DF1FFF400C35A7C /* AddClientController.swift */; };
+		2F41E7C41DF2048C00C35A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F41E7C31DF2048C00C35A7C /* Assets.xcassets */; };
+		2F41E7C71DF211E800C35A7C /* ProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E7C61DF211E700C35A7C /* ProductsController.swift */; };
+		2F41E7CC1DF2122900C35A7C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E7CA1DF2122900C35A7C /* ProductCell.swift */; };
+		2F41E7CD1DF2122900C35A7C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F41E7CB1DF2122900C35A7C /* ProductCell.xib */; };
+		2F41E7D01DF2124E00C35A7C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E7CE1DF2124E00C35A7C /* CategoryCell.swift */; };
+		2F41E7D11DF2124E00C35A7C /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F41E7CF1DF2124E00C35A7C /* CategoryCell.xib */; };
+		2F4D5E3E1DEEFAF90084F796 /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D5E3C1DEEFAF90084F796 /* ClientCell.swift */; };
+		2F4D5E3F1DEEFAF90084F796 /* ClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D5E3D1DEEFAF90084F796 /* ClientCell.xib */; };
+		2F4D5E411DEEFFD60084F796 /* ClientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D5E401DEEFFD60084F796 /* ClientsController.swift */; };
+		2F74FBF71DF1BF3C0075B230 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4601DCBCE82006E15EB /* Order.swift */; };
+		2F794BA21E4C051F00FE2C6D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F794BA11E4C051F00FE2C6D /* Alert.swift */; };
+		2F794BA41E4C46FB00FE2C6D /* ScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F794BA31E4C46FB00FE2C6D /* ScanerView.swift */; };
+		2F7A24C71DCF95C700B5268A /* OrderDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A24C61DCF95C700B5268A /* OrderDetailController.swift */; };
+		2F7A24CE1DCF98AD00B5268A /* SaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A24CC1DCF98AD00B5268A /* SaleCell.swift */; };
+		2F7A24CF1DCF98AD00B5268A /* SaleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7A24CD1DCF98AD00B5268A /* SaleCell.xib */; };
+		2F959DE71DEA715A00E6CA28 /* DIYCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F959DE61DEA715A00E6CA28 /* DIYCalendarCell.swift */; };
 		2F9641831DCBA0DE006CCBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641821DCBA0DE006CCBF6 /* AppDelegate.swift */; };
-		2F9641851DCBA0DE006CCBF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641841DCBA0DE006CCBF6 /* ViewController.swift */; };
 		2F9641881DCBA0DE006CCBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9641861DCBA0DE006CCBF6 /* Main.storyboard */; };
 		2F96418B1DCBA0DE006CCBF6 /* Shop_System.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641891DCBA0DE006CCBF6 /* Shop_System.xcdatamodeld */; };
-		2F96418D1DCBA0DE006CCBF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F96418C1DCBA0DE006CCBF6 /* Assets.xcassets */; };
 		2F9641901DCBA0DE006CCBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F96418E1DCBA0DE006CCBF6 /* LaunchScreen.storyboard */; };
 		2F96419B1DCBA0DE006CCBF6 /* Shop_SystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F96419A1DCBA0DE006CCBF6 /* Shop_SystemTests.swift */; };
 		2F9641A61DCBA0DE006CCBF6 /* Shop_SystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641A51DCBA0DE006CCBF6 /* Shop_SystemUITests.swift */; };
+		2F9641B41DCBA200006CCBF6 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641B31DCBA200006CCBF6 /* AuthController.swift */; };
+		2F9641BA1DCBA22F006CCBF6 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641B71DCBA22F006CCBF6 /* ReportController.swift */; };
+		2F9641BB1DCBA22F006CCBF6 /* ReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9641B81DCBA22F006CCBF6 /* ReportCell.xib */; };
+		2F9641BC1DCBA22F006CCBF6 /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641B91DCBA22F006CCBF6 /* ReportCell.swift */; };
+		2FC0D99C1E4AD85E0063A1E9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45D1DCBCE21006E15EB /* API.swift */; };
+		2FC0D99D1E4AD8650063A1E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */; };
+		2FC0D9A01E4AE6350063A1E9 /* ListOfChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0D99F1E4AE6350063A1E9 /* ListOfChannelController.swift */; };
+		2FDA2A411DCF6D9E00D589A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */; };
+		2FDC05871DF1B1A200A4F0CE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDC05861DF1B1A200A4F0CE /* NotificationCenter.framework */; };
+		2FDC058A1DF1B1A200A4F0CE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */; };
+		2FDC058D1DF1B1A200A4F0CE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDC058B1DF1B1A200A4F0CE /* MainInterface.storyboard */; };
+		2FDC05911DF1B1A200A4F0CE /* Shop-System-Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2FDC84431DF33EB200245213 /* AddProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC84421DF33EB200245213 /* AddProductController.swift */; };
+		2FE124011DD29E0400792531 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */; };
+		2FE124021DD29E0400792531 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */; };
+		2FE353041DDF98FC00F5D6C4 /* AllReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE353031DDF98FC00F5D6C4 /* AllReportController.swift */; };
+		2FEF0BDC1DD79F1800D42A21 /* ShowProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0BDB1DD79F1800D42A21 /* ShowProductController.swift */; };
+		2FEF0BDE1DD7A41300D42A21 /* ProductCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0BDD1DD7A41300D42A21 /* ProductCode.swift */; };
+		2FF9FDF61DEA694C00A353BF /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDD71DEA694C00A353BF /* FSCalendar+Deprecated.m */; };
+		2FF9FDF71DEA694C00A353BF /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDD91DEA694C00A353BF /* FSCalendar.m */; };
+		2FF9FDF81DEA694C00A353BF /* FSCalendarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDDB1DEA694C00A353BF /* FSCalendarAnimator.m */; };
+		2FF9FDF91DEA694C00A353BF /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDDD1DEA694C00A353BF /* FSCalendarAppearance.m */; };
+		2FF9FDFA1DEA694C00A353BF /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDDF1DEA694C00A353BF /* FSCalendarCalculator.m */; };
+		2FF9FDFB1DEA694C00A353BF /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDE11DEA694C00A353BF /* FSCalendarCell.m */; };
+		2FF9FDFC1DEA694C00A353BF /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDE31DEA694C00A353BF /* FSCalendarCollectionView.m */; };
+		2FF9FDFD1DEA694C00A353BF /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDE51DEA694C00A353BF /* FSCalendarCollectionViewLayout.m */; };
+		2FF9FDFE1DEA694C00A353BF /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDE71DEA694C00A353BF /* FSCalendarConstants.m */; };
+		2FF9FDFF1DEA694C00A353BF /* FSCalendarDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDE91DEA694C00A353BF /* FSCalendarDelegateProxy.m */; };
+		2FF9FE001DEA694C00A353BF /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDEC1DEA694C00A353BF /* FSCalendarExtensions.m */; };
+		2FF9FE011DEA694C00A353BF /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDEE1DEA694C00A353BF /* FSCalendarHeaderView.m */; };
+		2FF9FE021DEA694C00A353BF /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF01DEA694C00A353BF /* FSCalendarScopeHandle.m */; };
+		2FF9FE031DEA694C00A353BF /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF21DEA694C00A353BF /* FSCalendarStickyHeader.m */; };
+		2FF9FE041DEA694C00A353BF /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF41DEA694C00A353BF /* FSCalendarWeekdayView.m */; };
+		2FF9FE051DEA694C00A353BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF51DEA694C00A353BF /* Info.plist */; };
+		8F36407DF38197E377C16D45 /* Pods_Shop_System_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA58CDEDA33DB15A254B7252 /* Pods_Shop_System_Widget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +102,69 @@
 			remoteGlobalIDString = 2F96417E1DCBA0DE006CCBF6;
 			remoteInfo = "Shop System";
 		};
+		2FDC058F1DF1B1A200A4F0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F9641771DCBA0DE006CCBF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FDC05841DF1B1A200A4F0CE;
+			remoteInfo = "Shop-System Widget";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2FDC05951DF1B1A200A4F0CE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2FDC05911DF1B1A200A4F0CE /* Shop-System-Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2F96417F1DCBA0DE006CCBF6 /* Shop System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C6B0C8E9B1FDD22EAA42AA /* Pods-Shop-System-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System-Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System-Widget/Pods-Shop-System-Widget.release.xcconfig"; sourceTree = "<group>"; };
+		1347DCADC7F6BC6694E99FE7 /* Pods_Shop_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shop_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		215261B0E245910205B49D29 /* Pods-Shop System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop System.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop System/Pods-Shop System.release.xcconfig"; sourceTree = "<group>"; };
+		2F32F45A1DCBC8A9006E15EB /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		2F32F45D1DCBCE21006E15EB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2F32F4601DCBCE82006E15EB /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		2F32F4621DCBCF79006E15EB /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
+		2F32F4641DCBCFFE006E15EB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2F32F4661DCBD087006E15EB /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		2F32F4681DCBD0DA006E15EB /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2F32F46A1DCBD12E006E15EB /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		2F3E16381DD0624E00DC0FEC /* ScanerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanerController.swift; sourceTree = "<group>"; };
+		2F3E163A1DD0779C00DC0FEC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2F3E84431E4B057D0020AC32 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/Main.strings"; sourceTree = "<group>"; };
+		2F3E84441E4B057D0020AC32 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2F3E84451E4B057D0020AC32 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		2F41E7BF1DF1D69600C35A7C /* Shop-System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shop-System.entitlements"; sourceTree = "<group>"; };
+		2F41E7C01DF1D6DF00C35A7C /* Shop-System-Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shop-System-Widget.entitlements"; sourceTree = SOURCE_ROOT; };
+		2F41E7C11DF1FFF400C35A7C /* AddClientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClientController.swift; sourceTree = "<group>"; };
+		2F41E7C31DF2048C00C35A7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F41E7C61DF211E700C35A7C /* ProductsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
+		2F41E7CA1DF2122900C35A7C /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		2F41E7CB1DF2122900C35A7C /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		2F41E7CE1DF2124E00C35A7C /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		2F41E7CF1DF2124E00C35A7C /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		2F4D5E3C1DEEFAF90084F796 /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
+		2F4D5E3D1DEEFAF90084F796 /* ClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientCell.xib; sourceTree = "<group>"; };
+		2F4D5E401DEEFFD60084F796 /* ClientsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsController.swift; sourceTree = "<group>"; };
+		2F74FBF81DF1BFAC0075B230 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		2F794BA11E4C051F00FE2C6D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2F794BA31E4C46FB00FE2C6D /* ScanerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanerView.swift; sourceTree = "<group>"; };
+		2F7A24C61DCF95C700B5268A /* OrderDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailController.swift; sourceTree = "<group>"; };
+		2F7A24CC1DCF98AD00B5268A /* SaleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleCell.swift; sourceTree = "<group>"; };
+		2F7A24CD1DCF98AD00B5268A /* SaleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaleCell.xib; sourceTree = "<group>"; };
+		2F959DE61DEA715A00E6CA28 /* DIYCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIYCalendarCell.swift; sourceTree = "<group>"; };
+		2F96417F1DCBA0DE006CCBF6 /* Shop-System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop-System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9641821DCBA0DE006CCBF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F9641841DCBA0DE006CCBF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F9641871DCBA0DE006CCBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F96418A1DCBA0DE006CCBF6 /* Shop_System.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shop_System.xcdatamodel; sourceTree = "<group>"; };
-		2F96418C1DCBA0DE006CCBF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F96418F1DCBA0DE006CCBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F9641911DCBA0DE006CCBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9641961DCBA0DE006CCBF6 /* Shop SystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop SystemTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +173,62 @@
 		2F9641A11DCBA0DE006CCBF6 /* Shop SystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop SystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9641A51DCBA0DE006CCBF6 /* Shop_SystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop_SystemUITests.swift; sourceTree = "<group>"; };
 		2F9641A71DCBA0DE006CCBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9641B31DCBA200006CCBF6 /* AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		2F9641B71DCBA22F006CCBF6 /* ReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
+		2F9641B81DCBA22F006CCBF6 /* ReportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportCell.xib; sourceTree = "<group>"; };
+		2F9641B91DCBA22F006CCBF6 /* ReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
+		2FC0D99B1E4AC8790063A1E9 /* Shop_System-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shop_System-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FC0D99F1E4AE6350063A1E9 /* ListOfChannelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfChannelController.swift; sourceTree = "<group>"; };
+		2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shop-System-Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDC05861DF1B1A200A4F0CE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2FDC058C1DF1B1A200A4F0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2FDC058E1DF1B1A200A4F0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDC84421DF33EB200245213 /* AddProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductController.swift; sourceTree = "<group>"; };
+		2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extension.swift"; path = "../../../Downloads/NSDate-TimeAgo-master/NSDate+Extension.swift"; sourceTree = "<group>"; };
+		2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NSDateTimeAgo.bundle; path = "../../../Downloads/NSDate-TimeAgo-master/NSDateTimeAgo.bundle"; sourceTree = "<group>"; };
+		2FE353031DDF98FC00F5D6C4 /* AllReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllReportController.swift; sourceTree = "<group>"; };
+		2FEF0BDB1DD79F1800D42A21 /* ShowProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProductController.swift; sourceTree = "<group>"; };
+		2FEF0BDD1DD7A41300D42A21 /* ProductCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCode.swift; sourceTree = "<group>"; };
+		2FF9FDD71DEA694C00A353BF /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		2FF9FDD81DEA694C00A353BF /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		2FF9FDD91DEA694C00A353BF /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		2FF9FDDA1DEA694C00A353BF /* FSCalendarAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAnimator.h; sourceTree = "<group>"; };
+		2FF9FDDB1DEA694C00A353BF /* FSCalendarAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAnimator.m; sourceTree = "<group>"; };
+		2FF9FDDC1DEA694C00A353BF /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		2FF9FDDD1DEA694C00A353BF /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		2FF9FDDE1DEA694C00A353BF /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		2FF9FDDF1DEA694C00A353BF /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		2FF9FDE01DEA694C00A353BF /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		2FF9FDE11DEA694C00A353BF /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		2FF9FDE21DEA694C00A353BF /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		2FF9FDE31DEA694C00A353BF /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		2FF9FDE41DEA694C00A353BF /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		2FF9FDE51DEA694C00A353BF /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		2FF9FDE61DEA694C00A353BF /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		2FF9FDE71DEA694C00A353BF /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		2FF9FDE81DEA694C00A353BF /* FSCalendarDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegateProxy.h; sourceTree = "<group>"; };
+		2FF9FDE91DEA694C00A353BF /* FSCalendarDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegateProxy.m; sourceTree = "<group>"; };
+		2FF9FDEA1DEA694C00A353BF /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		2FF9FDEB1DEA694C00A353BF /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		2FF9FDEC1DEA694C00A353BF /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		2FF9FDED1DEA694C00A353BF /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		2FF9FDEE1DEA694C00A353BF /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		2FF9FDEF1DEA694C00A353BF /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		2FF9FDF01DEA694C00A353BF /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		2FF9FDF11DEA694C00A353BF /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		2FF9FDF21DEA694C00A353BF /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		2FF9FDF31DEA694C00A353BF /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		2FF9FDF41DEA694C00A353BF /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		2FF9FDF51DEA694C00A353BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5340BB77EC929CEC2C610F0B /* Pods-Shop System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop System.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop System/Pods-Shop System.debug.xcconfig"; sourceTree = "<group>"; };
+		568CABB107002FD11A04778F /* Pods-Shop-System Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System Widget/Pods-Shop-System Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		5ADB2BBAA4B758AA34DFBA6F /* Pods-Shop-System-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System-Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System-Widget/Pods-Shop-System-Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		604FAC9159262D23A11680B5 /* Pods-Shop-System Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System Widget/Pods-Shop-System Widget.release.xcconfig"; sourceTree = "<group>"; };
+		8FD03389FEA2CFA460D14B4D /* Pods-Shop-System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System.debug.xcconfig"; sourceTree = "<group>"; };
+		AC3D92B37388A6831E3A503F /* Pods-Shop-System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System.release.xcconfig"; sourceTree = "<group>"; };
+		EA58CDEDA33DB15A254B7252 /* Pods_Shop_System_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shop_System_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +236,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3E163B1DD0779C00DC0FEC /* AudioToolbox.framework in Frameworks */,
+				14C5D3A2E07B677D43A0EB0F /* Pods_Shop_System.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,25 +255,145 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FDC05821DF1B1A200A4F0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDC05871DF1B1A200A4F0CE /* NotificationCenter.framework in Frameworks */,
+				8F36407DF38197E377C16D45 /* Pods_Shop_System_Widget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F32F4591DCBC89C006E15EB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2FE123FE1DD29DDA00792531 /* TimeAgo */,
+				2F32F45A1DCBC8A9006E15EB /* Global.swift */,
+				2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		2F32F45C1DCBCE15006E15EB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2F32F45D1DCBCE21006E15EB /* API.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		2F32F45F1DCBCE72006E15EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F32F4601DCBCE82006E15EB /* Order.swift */,
+				2F32F4621DCBCF79006E15EB /* Sale.swift */,
+				2F32F4641DCBCFFE006E15EB /* Product.swift */,
+				2F32F4661DCBD087006E15EB /* Client.swift */,
+				2F32F4681DCBD0DA006E15EB /* Category.swift */,
+				2F32F46A1DCBD12E006E15EB /* Worker.swift */,
+				2FEF0BDD1DD7A41300D42A21 /* ProductCode.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2F41E7C51DF211CB00C35A7C /* ProductsController */ = {
+			isa = PBXGroup;
+			children = (
+				2F41E7C81DF211F400C35A7C /* CategoryCell */,
+				2F41E7C91DF211FF00C35A7C /* ProductCell */,
+				2F41E7C61DF211E700C35A7C /* ProductsController.swift */,
+				2FDC84421DF33EB200245213 /* AddProductController.swift */,
+			);
+			name = ProductsController;
+			sourceTree = "<group>";
+		};
+		2F41E7C81DF211F400C35A7C /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F41E7CE1DF2124E00C35A7C /* CategoryCell.swift */,
+				2F41E7CF1DF2124E00C35A7C /* CategoryCell.xib */,
+			);
+			name = CategoryCell;
+			sourceTree = "<group>";
+		};
+		2F41E7C91DF211FF00C35A7C /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F41E7CA1DF2122900C35A7C /* ProductCell.swift */,
+				2F41E7CB1DF2122900C35A7C /* ProductCell.xib */,
+			);
+			name = ProductCell;
+			sourceTree = "<group>";
+		};
+		2F4D5E3A1DEED64E0084F796 /* ClientsController */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D5E3B1DEED6600084F796 /* ClientCell */,
+				2F4D5E401DEEFFD60084F796 /* ClientsController.swift */,
+				2F41E7C11DF1FFF400C35A7C /* AddClientController.swift */,
+			);
+			name = ClientsController;
+			sourceTree = "<group>";
+		};
+		2F4D5E3B1DEED6600084F796 /* ClientCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D5E3C1DEEFAF90084F796 /* ClientCell.swift */,
+				2F4D5E3D1DEEFAF90084F796 /* ClientCell.xib */,
+			);
+			name = ClientCell;
+			sourceTree = "<group>";
+		};
+		2F794B9E1E4C04FD00FE2C6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F794BA11E4C051F00FE2C6D /* Alert.swift */,
+				2F794BA31E4C46FB00FE2C6D /* ScanerView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2F7A24C81DCF985B00B5268A /* OrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2F7A24C61DCF95C700B5268A /* OrderDetailController.swift */,
+			);
+			name = OrderDetail;
+			sourceTree = "<group>";
+		};
+		2F7A24C91DCF987E00B5268A /* SaleCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F7A24CC1DCF98AD00B5268A /* SaleCell.swift */,
+				2F7A24CD1DCF98AD00B5268A /* SaleCell.xib */,
+			);
+			name = SaleCell;
+			sourceTree = "<group>";
+		};
 		2F9641761DCBA0DE006CCBF6 = {
 			isa = PBXGroup;
 			children = (
+				2F41E7BF1DF1D69600C35A7C /* Shop-System.entitlements */,
 				2F9641811DCBA0DE006CCBF6 /* Shop System */,
 				2F9641991DCBA0DE006CCBF6 /* Shop SystemTests */,
 				2F9641A41DCBA0DE006CCBF6 /* Shop SystemUITests */,
+				2FDC05881DF1B1A200A4F0CE /* Shop-System-Widget */,
 				2F9641801DCBA0DE006CCBF6 /* Products */,
+				F1F39501C5D6CD85FC480201 /* Pods */,
+				D0F07BB20F2CB196F9F0C822 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2F9641801DCBA0DE006CCBF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F96417F1DCBA0DE006CCBF6 /* Shop System.app */,
+				2F96417F1DCBA0DE006CCBF6 /* Shop-System.app */,
 				2F9641961DCBA0DE006CCBF6 /* Shop SystemTests.xctest */,
 				2F9641A11DCBA0DE006CCBF6 /* Shop SystemUITests.xctest */,
+				2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +401,26 @@
 		2F9641811DCBA0DE006CCBF6 /* Shop System */ = {
 			isa = PBXGroup;
 			children = (
+				2FC0D99E1E4AE60C0063A1E9 /* ScanerController */,
+				2F41E7C51DF211CB00C35A7C /* ProductsController */,
+				2F4D5E3A1DEED64E0084F796 /* ClientsController */,
+				2FF9FDD61DEA694C00A353BF /* FSCalendar */,
+				2FE352FD1DDF963C00F5D6C4 /* AllReport */,
+				2F32F45F1DCBCE72006E15EB /* Model */,
+				2F794B9E1E4C04FD00FE2C6D /* View */,
+				2F32F45C1DCBCE15006E15EB /* API */,
+				2F32F4591DCBC89C006E15EB /* Support */,
+				2F9641B51DCBA207006CCBF6 /* Report */,
+				2F7A24C81DCF985B00B5268A /* OrderDetail */,
+				2F9641B31DCBA200006CCBF6 /* AuthController.swift */,
 				2F9641821DCBA0DE006CCBF6 /* AppDelegate.swift */,
-				2F9641841DCBA0DE006CCBF6 /* ViewController.swift */,
+				2FEF0BDB1DD79F1800D42A21 /* ShowProductController.swift */,
 				2F9641861DCBA0DE006CCBF6 /* Main.storyboard */,
-				2F96418C1DCBA0DE006CCBF6 /* Assets.xcassets */,
 				2F96418E1DCBA0DE006CCBF6 /* LaunchScreen.storyboard */,
+				2F41E7C31DF2048C00C35A7C /* Assets.xcassets */,
 				2F9641911DCBA0DE006CCBF6 /* Info.plist */,
 				2F9641891DCBA0DE006CCBF6 /* Shop_System.xcdatamodeld */,
+				2FC0D99B1E4AC8790063A1E9 /* Shop_System-Bridging-Header.h */,
 			);
 			path = "Shop System";
 			sourceTree = "<group>";
@@ -128,24 +443,152 @@
 			path = "Shop SystemUITests";
 			sourceTree = "<group>";
 		};
+		2F9641B51DCBA207006CCBF6 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				2F9641B61DCBA210006CCBF6 /* ReportCell */,
+				2F9641B71DCBA22F006CCBF6 /* ReportController.swift */,
+			);
+			name = Report;
+			sourceTree = "<group>";
+		};
+		2F9641B61DCBA210006CCBF6 /* ReportCell */ = {
+			isa = PBXGroup;
+			children = (
+				2F7A24C91DCF987E00B5268A /* SaleCell */,
+				2F9641B81DCBA22F006CCBF6 /* ReportCell.xib */,
+				2F9641B91DCBA22F006CCBF6 /* ReportCell.swift */,
+			);
+			name = ReportCell;
+			sourceTree = "<group>";
+		};
+		2FC0D99E1E4AE60C0063A1E9 /* ScanerController */ = {
+			isa = PBXGroup;
+			children = (
+				2F3E16381DD0624E00DC0FEC /* ScanerController.swift */,
+				2FC0D99F1E4AE6350063A1E9 /* ListOfChannelController.swift */,
+			);
+			name = ScanerController;
+			sourceTree = "<group>";
+		};
+		2FDC05881DF1B1A200A4F0CE /* Shop-System-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				2F41E7C01DF1D6DF00C35A7C /* Shop-System-Widget.entitlements */,
+				2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */,
+				2FDC058B1DF1B1A200A4F0CE /* MainInterface.storyboard */,
+				2FDC058E1DF1B1A200A4F0CE /* Info.plist */,
+			);
+			name = "Shop-System-Widget";
+			path = "Shop-System Widget";
+			sourceTree = "<group>";
+		};
+		2FE123FE1DD29DDA00792531 /* TimeAgo */ = {
+			isa = PBXGroup;
+			children = (
+				2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */,
+				2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */,
+			);
+			name = TimeAgo;
+			sourceTree = "<group>";
+		};
+		2FE352FD1DDF963C00F5D6C4 /* AllReport */ = {
+			isa = PBXGroup;
+			children = (
+				2F959DE61DEA715A00E6CA28 /* DIYCalendarCell.swift */,
+				2FE353031DDF98FC00F5D6C4 /* AllReportController.swift */,
+			);
+			name = AllReport;
+			sourceTree = "<group>";
+		};
+		2FF9FDD61DEA694C00A353BF /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				2FF9FDD71DEA694C00A353BF /* FSCalendar+Deprecated.m */,
+				2FF9FDD81DEA694C00A353BF /* FSCalendar.h */,
+				2FF9FDD91DEA694C00A353BF /* FSCalendar.m */,
+				2FF9FDDA1DEA694C00A353BF /* FSCalendarAnimator.h */,
+				2FF9FDDB1DEA694C00A353BF /* FSCalendarAnimator.m */,
+				2FF9FDDC1DEA694C00A353BF /* FSCalendarAppearance.h */,
+				2FF9FDDD1DEA694C00A353BF /* FSCalendarAppearance.m */,
+				2FF9FDDE1DEA694C00A353BF /* FSCalendarCalculator.h */,
+				2FF9FDDF1DEA694C00A353BF /* FSCalendarCalculator.m */,
+				2FF9FDE01DEA694C00A353BF /* FSCalendarCell.h */,
+				2FF9FDE11DEA694C00A353BF /* FSCalendarCell.m */,
+				2FF9FDE21DEA694C00A353BF /* FSCalendarCollectionView.h */,
+				2FF9FDE31DEA694C00A353BF /* FSCalendarCollectionView.m */,
+				2FF9FDE41DEA694C00A353BF /* FSCalendarCollectionViewLayout.h */,
+				2FF9FDE51DEA694C00A353BF /* FSCalendarCollectionViewLayout.m */,
+				2FF9FDE61DEA694C00A353BF /* FSCalendarConstants.h */,
+				2FF9FDE71DEA694C00A353BF /* FSCalendarConstants.m */,
+				2FF9FDE81DEA694C00A353BF /* FSCalendarDelegateProxy.h */,
+				2FF9FDE91DEA694C00A353BF /* FSCalendarDelegateProxy.m */,
+				2FF9FDEA1DEA694C00A353BF /* FSCalendarDynamicHeader.h */,
+				2FF9FDEB1DEA694C00A353BF /* FSCalendarExtensions.h */,
+				2FF9FDEC1DEA694C00A353BF /* FSCalendarExtensions.m */,
+				2FF9FDED1DEA694C00A353BF /* FSCalendarHeaderView.h */,
+				2FF9FDEE1DEA694C00A353BF /* FSCalendarHeaderView.m */,
+				2FF9FDEF1DEA694C00A353BF /* FSCalendarScopeHandle.h */,
+				2FF9FDF01DEA694C00A353BF /* FSCalendarScopeHandle.m */,
+				2FF9FDF11DEA694C00A353BF /* FSCalendarStickyHeader.h */,
+				2FF9FDF21DEA694C00A353BF /* FSCalendarStickyHeader.m */,
+				2FF9FDF31DEA694C00A353BF /* FSCalendarWeekdayView.h */,
+				2FF9FDF41DEA694C00A353BF /* FSCalendarWeekdayView.m */,
+				2FF9FDF51DEA694C00A353BF /* Info.plist */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		D0F07BB20F2CB196F9F0C822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F74FBF81DF1BFAC0075B230 /* Alamofire.framework */,
+				2F3E163A1DD0779C00DC0FEC /* AudioToolbox.framework */,
+				1347DCADC7F6BC6694E99FE7 /* Pods_Shop_System.framework */,
+				2FDC05861DF1B1A200A4F0CE /* NotificationCenter.framework */,
+				EA58CDEDA33DB15A254B7252 /* Pods_Shop_System_Widget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1F39501C5D6CD85FC480201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5340BB77EC929CEC2C610F0B /* Pods-Shop System.debug.xcconfig */,
+				215261B0E245910205B49D29 /* Pods-Shop System.release.xcconfig */,
+				8FD03389FEA2CFA460D14B4D /* Pods-Shop-System.debug.xcconfig */,
+				AC3D92B37388A6831E3A503F /* Pods-Shop-System.release.xcconfig */,
+				568CABB107002FD11A04778F /* Pods-Shop-System Widget.debug.xcconfig */,
+				604FAC9159262D23A11680B5 /* Pods-Shop-System Widget.release.xcconfig */,
+				5ADB2BBAA4B758AA34DFBA6F /* Pods-Shop-System-Widget.debug.xcconfig */,
+				03C6B0C8E9B1FDD22EAA42AA /* Pods-Shop-System-Widget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F96417E1DCBA0DE006CCBF6 /* Shop System */ = {
+		2F96417E1DCBA0DE006CCBF6 /* Shop-System */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9641AA1DCBA0DF006CCBF6 /* Build configuration list for PBXNativeTarget "Shop System" */;
+			buildConfigurationList = 2F9641AA1DCBA0DF006CCBF6 /* Build configuration list for PBXNativeTarget "Shop-System" */;
 			buildPhases = (
+				25F222E7DF92C7FE46817C8A /* [CP] Check Pods Manifest.lock */,
 				2F96417B1DCBA0DE006CCBF6 /* Sources */,
 				2F96417C1DCBA0DE006CCBF6 /* Frameworks */,
 				2F96417D1DCBA0DE006CCBF6 /* Resources */,
+				0B779CEAFBCEE03B4995CFC1 /* [CP] Embed Pods Frameworks */,
+				E3AEDDADF8BDFFCE0FBAB31F /* [CP] Copy Pods Resources */,
+				2FDC05951DF1B1A200A4F0CE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2FDC05901DF1B1A200A4F0CE /* PBXTargetDependency */,
 			);
-			name = "Shop System";
+			name = "Shop-System";
 			productName = "Shop System";
-			productReference = 2F96417F1DCBA0DE006CCBF6 /* Shop System.app */;
+			productReference = 2F96417F1DCBA0DE006CCBF6 /* Shop-System.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2F9641951DCBA0DE006CCBF6 /* Shop SystemTests */ = {
@@ -184,6 +627,25 @@
 			productReference = 2F9641A11DCBA0DE006CCBF6 /* Shop SystemUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2FDC05841DF1B1A200A4F0CE /* Shop-System-Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDC05941DF1B1A200A4F0CE /* Build configuration list for PBXNativeTarget "Shop-System-Widget" */;
+			buildPhases = (
+				D4C5BD03E2AE8FF2669C69BD /* [CP] Check Pods Manifest.lock */,
+				2FDC05811DF1B1A200A4F0CE /* Sources */,
+				2FDC05821DF1B1A200A4F0CE /* Frameworks */,
+				2FDC05831DF1B1A200A4F0CE /* Resources */,
+				70B37E2E23379FF7BDF3F3A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shop-System-Widget";
+			productName = "Shop-System Widget";
+			productReference = 2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +660,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DSX6W75YR7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					2F9641951DCBA0DE006CCBF6 = {
 						CreatedOnToolsVersion = 8.0;
@@ -210,6 +677,16 @@
 						DevelopmentTeam = DSX6W75YR7;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2F96417E1DCBA0DE006CCBF6;
+					};
+					2FDC05841DF1B1A200A4F0CE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DSX6W75YR7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -226,9 +703,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F96417E1DCBA0DE006CCBF6 /* Shop System */,
+				2F96417E1DCBA0DE006CCBF6 /* Shop-System */,
 				2F9641951DCBA0DE006CCBF6 /* Shop SystemTests */,
 				2F9641A01DCBA0DE006CCBF6 /* Shop SystemUITests */,
+				2FDC05841DF1B1A200A4F0CE /* Shop-System-Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -238,9 +716,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F41E7CD1DF2122900C35A7C /* ProductCell.xib in Resources */,
 				2F9641901DCBA0DE006CCBF6 /* LaunchScreen.storyboard in Resources */,
-				2F96418D1DCBA0DE006CCBF6 /* Assets.xcassets in Resources */,
 				2F9641881DCBA0DE006CCBF6 /* Main.storyboard in Resources */,
+				2FE124021DD29E0400792531 /* NSDateTimeAgo.bundle in Resources */,
+				2F9641BB1DCBA22F006CCBF6 /* ReportCell.xib in Resources */,
+				2F41E7D11DF2124E00C35A7C /* CategoryCell.xib in Resources */,
+				2F7A24CF1DCF98AD00B5268A /* SaleCell.xib in Resources */,
+				2F4D5E3F1DEEFAF90084F796 /* ClientCell.xib in Resources */,
+				2F41E7C41DF2048C00C35A7C /* Assets.xcassets in Resources */,
+				2FF9FE051DEA694C00A353BF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,16 +743,147 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FDC05831DF1B1A200A4F0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDC058D1DF1B1A200A4F0CE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B779CEAFBCEE03B4995CFC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25F222E7DF92C7FE46817C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70B37E2E23379FF7BDF3F3A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shop-System-Widget/Pods-Shop-System-Widget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C5BD03E2AE8FF2669C69BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3AEDDADF8BDFFCE0FBAB31F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F96417B1DCBA0DE006CCBF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9641851DCBA0DE006CCBF6 /* ViewController.swift in Sources */,
+				2FF9FDFD1DEA694C00A353BF /* FSCalendarCollectionViewLayout.m in Sources */,
+				2F7A24C71DCF95C700B5268A /* OrderDetailController.swift in Sources */,
+				2F794BA41E4C46FB00FE2C6D /* ScanerView.swift in Sources */,
+				2FF9FDFF1DEA694C00A353BF /* FSCalendarDelegateProxy.m in Sources */,
 				2F96418B1DCBA0DE006CCBF6 /* Shop_System.xcdatamodeld in Sources */,
+				2F794BA21E4C051F00FE2C6D /* Alert.swift in Sources */,
+				2F32F46B1DCBD12E006E15EB /* Worker.swift in Sources */,
+				2F41E7CC1DF2122900C35A7C /* ProductCell.swift in Sources */,
+				2FF9FDF61DEA694C00A353BF /* FSCalendar+Deprecated.m in Sources */,
+				2FF9FDF91DEA694C00A353BF /* FSCalendarAppearance.m in Sources */,
+				2FC0D9A01E4AE6350063A1E9 /* ListOfChannelController.swift in Sources */,
+				2FF9FE011DEA694C00A353BF /* FSCalendarHeaderView.m in Sources */,
+				2F3FD2831DF1CDE800AFE5CF /* Global.swift in Sources */,
+				2F32F4631DCBCF79006E15EB /* Sale.swift in Sources */,
+				2F9641BA1DCBA22F006CCBF6 /* ReportController.swift in Sources */,
+				2FF9FE041DEA694C00A353BF /* FSCalendarWeekdayView.m in Sources */,
+				2FEF0BDC1DD79F1800D42A21 /* ShowProductController.swift in Sources */,
+				2F3FD2821DF1CAF900AFE5CF /* TodayViewController.swift in Sources */,
+				2F32F4611DCBCE82006E15EB /* Order.swift in Sources */,
+				2F32F4671DCBD087006E15EB /* Client.swift in Sources */,
+				2FF9FE021DEA694C00A353BF /* FSCalendarScopeHandle.m in Sources */,
+				2FEF0BDE1DD7A41300D42A21 /* ProductCode.swift in Sources */,
+				2F9641B41DCBA200006CCBF6 /* AuthController.swift in Sources */,
+				2F4D5E3E1DEEFAF90084F796 /* ClientCell.swift in Sources */,
 				2F9641831DCBA0DE006CCBF6 /* AppDelegate.swift in Sources */,
+				2F959DE71DEA715A00E6CA28 /* DIYCalendarCell.swift in Sources */,
+				2F4D5E411DEEFFD60084F796 /* ClientsController.swift in Sources */,
+				2F32F4651DCBCFFE006E15EB /* Product.swift in Sources */,
+				2FF9FDFE1DEA694C00A353BF /* FSCalendarConstants.m in Sources */,
+				2FF9FDFC1DEA694C00A353BF /* FSCalendarCollectionView.m in Sources */,
+				2FF9FE031DEA694C00A353BF /* FSCalendarStickyHeader.m in Sources */,
+				2FF9FDFB1DEA694C00A353BF /* FSCalendarCell.m in Sources */,
+				2FF9FE001DEA694C00A353BF /* FSCalendarExtensions.m in Sources */,
+				2F41E7C71DF211E800C35A7C /* ProductsController.swift in Sources */,
+				2F9641BC1DCBA22F006CCBF6 /* ReportCell.swift in Sources */,
+				2FE124011DD29E0400792531 /* NSDate+Extension.swift in Sources */,
+				2F41E7C21DF1FFF400C35A7C /* AddClientController.swift in Sources */,
+				2F32F45E1DCBCE21006E15EB /* API.swift in Sources */,
+				2FF9FDF71DEA694C00A353BF /* FSCalendar.m in Sources */,
+				2FE353041DDF98FC00F5D6C4 /* AllReportController.swift in Sources */,
+				2FF9FDFA1DEA694C00A353BF /* FSCalendarCalculator.m in Sources */,
+				2F32F4691DCBD0DA006E15EB /* Category.swift in Sources */,
+				2F7A24CE1DCF98AD00B5268A /* SaleCell.swift in Sources */,
+				2FF9FDF81DEA694C00A353BF /* FSCalendarAnimator.m in Sources */,
+				2F3E16391DD0624E00DC0FEC /* ScanerController.swift in Sources */,
+				2FDA2A411DCF6D9E00D589A0 /* Extensions.swift in Sources */,
+				2F41E7D01DF2124E00C35A7C /* CategoryCell.swift in Sources */,
+				2FDC84431DF33EB200245213 /* AddProductController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,18 +903,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FDC05811DF1B1A200A4F0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC0D99C1E4AD85E0063A1E9 /* API.swift in Sources */,
+				2F3FD27E1DF1CAAD00AFE5CF /* AppDelegate.swift in Sources */,
+				2F74FBF71DF1BF3C0075B230 /* Order.swift in Sources */,
+				2F3FD27C1DF1CAA000AFE5CF /* Worker.swift in Sources */,
+				2F3FD27B1DF1CA9D00AFE5CF /* Product.swift in Sources */,
+				2F3FD27A1DF1CA8900AFE5CF /* Sale.swift in Sources */,
+				2FDC058A1DF1B1A200A4F0CE /* TodayViewController.swift in Sources */,
+				2FC0D99D1E4AD8650063A1E9 /* Extensions.swift in Sources */,
+				2F3FD27D1DF1CAA700AFE5CF /* Global.swift in Sources */,
+				2F3FD2801DF1CACB00AFE5CF /* ProductCode.swift in Sources */,
+				2F3FD27F1DF1CAC000AFE5CF /* Client.swift in Sources */,
+				2F3FD2811DF1CAD500AFE5CF /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		2F9641981DCBA0DE006CCBF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F96417E1DCBA0DE006CCBF6 /* Shop System */;
+			target = 2F96417E1DCBA0DE006CCBF6 /* Shop-System */;
 			targetProxy = 2F9641971DCBA0DE006CCBF6 /* PBXContainerItemProxy */;
 		};
 		2F9641A31DCBA0DE006CCBF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F96417E1DCBA0DE006CCBF6 /* Shop System */;
+			target = 2F96417E1DCBA0DE006CCBF6 /* Shop-System */;
 			targetProxy = 2F9641A21DCBA0DE006CCBF6 /* PBXContainerItemProxy */;
+		};
+		2FDC05901DF1B1A200A4F0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FDC05841DF1B1A200A4F0CE /* Shop-System-Widget */;
+			targetProxy = 2FDC058F1DF1B1A200A4F0CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +947,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2F9641871DCBA0DE006CCBF6 /* Base */,
+				2F3E84431E4B057D0020AC32 /* ru-RU */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,8 +956,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				2F96418F1DCBA0DE006CCBF6 /* Base */,
+				2F3E84441E4B057D0020AC32 /* ru-RU */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2FDC058B1DF1B1A200A4F0CE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FDC058C1DF1B1A200A4F0CE /* Base */,
+				2F3E84451E4B057D0020AC32 /* ru-RU */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +977,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -340,6 +992,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -376,6 +1029,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -390,6 +1044,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -417,27 +1072,48 @@
 		};
 		2F9641AB1DCBA0DF006CCBF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD03389FEA2CFA460D14B4D /* Pods-Shop-System.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Shop-System.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				INFOPLIST_FILE = "Shop System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "netsharks.Shop-System";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shop System/Shop_System-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/FSCalendar";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
 		2F9641AC1DCBA0DF006CCBF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3D92B37388A6831E3A503F /* Pods-Shop-System.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Shop-System.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				INFOPLIST_FILE = "Shop System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "netsharks.Shop-System";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shop System/Shop_System-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/FSCalendar";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
@@ -446,13 +1122,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				INFOPLIST_FILE = "Shop SystemTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "netsharks.Shop-SystemTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-SystemTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shop System.app/Shop System";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shop-System.app/Shop-System";
 			};
 			name = Debug;
 		};
@@ -461,13 +1138,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				INFOPLIST_FILE = "Shop SystemTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "netsharks.Shop-SystemTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-SystemTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shop System.app/Shop System";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shop-System.app/Shop-System";
 			};
 			name = Release;
 		};
@@ -478,7 +1156,7 @@
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				INFOPLIST_FILE = "Shop SystemUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "netsharks.Shop-SystemUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-SystemUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Shop System";
@@ -492,10 +1170,46 @@
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				INFOPLIST_FILE = "Shop SystemUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "netsharks.Shop-SystemUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-SystemUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Shop System";
+			};
+			name = Release;
+		};
+		2FDC05921DF1B1A200A4F0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADB2BBAA4B758AA34DFBA6F /* Pods-Shop-System-Widget.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = "Shop-System-Widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DSX6W75YR7;
+				INFOPLIST_FILE = "Shop-System Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System.Shop-System-Widget1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2FDC05931DF1B1A200A4F0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C6B0C8E9B1FDD22EAA42AA /* Pods-Shop-System-Widget.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = "Shop-System-Widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DSX6W75YR7;
+				INFOPLIST_FILE = "Shop-System Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System.Shop-System-Widget1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -511,13 +1225,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9641AA1DCBA0DF006CCBF6 /* Build configuration list for PBXNativeTarget "Shop System" */ = {
+		2F9641AA1DCBA0DF006CCBF6 /* Build configuration list for PBXNativeTarget "Shop-System" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F9641AB1DCBA0DF006CCBF6 /* Debug */,
 				2F9641AC1DCBA0DF006CCBF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F9641AD1DCBA0DF006CCBF6 /* Build configuration list for PBXNativeTarget "Shop SystemTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +1241,7 @@
 				2F9641AF1DCBA0DF006CCBF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F9641B01DCBA0DF006CCBF6 /* Build configuration list for PBXNativeTarget "Shop SystemUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +1250,16 @@
 				2F9641B21DCBA0DF006CCBF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDC05941DF1B1A200A4F0CE /* Build configuration list for PBXNativeTarget "Shop-System-Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FDC05921DF1B1A200A4F0CE /* Debug */,
+				2FDC05931DF1B1A200A4F0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

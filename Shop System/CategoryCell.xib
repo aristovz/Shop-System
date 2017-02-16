@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="Shop_System" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundforcell" translatesAutoresizingMaskIntoConstraints="NO" id="ZX8-KP-PeG">
+                        <rect key="frame" x="-30" y="0.0" width="135" height="90"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Табак" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="mae-Xx-a4v">
+                        <rect key="frame" x="8" y="23" width="74" height="23.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" red="0.25480964779999998" green="0.29794782400000003" blue="0.34530162809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 продуктов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBG-Fq-rx6">
+                        <rect key="frame" x="10.5" y="51.5" width="69" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.32156862749999998" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.93042075629999998" green="0.95321816209999999" blue="0.96890991930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZX8-KP-PeG" secondAttribute="bottom" id="9xD-89-g33"/>
+                <constraint firstItem="mae-Xx-a4v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="23" id="PQm-do-Yj9"/>
+                <constraint firstItem="ZX8-KP-PeG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UHy-Cr-NLQ"/>
+                <constraint firstItem="mae-Xx-a4v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="UTE-Ll-XOY"/>
+                <constraint firstItem="mae-Xx-a4v" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="coi-Mv-tGR"/>
+                <constraint firstAttribute="trailing" secondItem="ZX8-KP-PeG" secondAttribute="trailing" constant="-15" id="dlO-xQ-duw"/>
+                <constraint firstItem="ZX8-KP-PeG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-30" id="enG-D5-gFc"/>
+                <constraint firstItem="RBG-Fq-rx6" firstAttribute="top" secondItem="mae-Xx-a4v" secondAttribute="bottom" constant="5" id="hEh-Pe-meW"/>
+                <constraint firstItem="RBG-Fq-rx6" firstAttribute="centerX" secondItem="mae-Xx-a4v" secondAttribute="centerX" id="z1h-TV-MjP"/>
+            </constraints>
+            <size key="customSize" width="90" height="90"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="categoryNameLabel" destination="mae-Xx-a4v" id="CnM-Vd-of9"/>
+                <outlet property="countProductsLabel" destination="RBG-Fq-rx6" id="UJn-fy-tln"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="59"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="backgroundforcell" width="375" height="119"/>
+    </resources>
+</document>
