@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14C5D3A2E07B677D43A0EB0F /* Pods_Shop_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347DCADC7F6BC6694E99FE7 /* Pods_Shop_System.framework */; };
 		2F32F45E1DCBCE21006E15EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45D1DCBCE21006E15EB /* API.swift */; };
 		2F32F4611DCBCE82006E15EB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4601DCBCE82006E15EB /* Order.swift */; };
 		2F32F4631DCBCF79006E15EB /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4621DCBCF79006E15EB /* Sale.swift */; };
@@ -17,15 +16,6 @@
 		2F32F46B1DCBD12E006E15EB /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F46A1DCBD12E006E15EB /* Worker.swift */; };
 		2F3E16391DD0624E00DC0FEC /* ScanerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E16381DD0624E00DC0FEC /* ScanerController.swift */; };
 		2F3E163B1DD0779C00DC0FEC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3E163A1DD0779C00DC0FEC /* AudioToolbox.framework */; };
-		2F3FD27A1DF1CA8900AFE5CF /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4621DCBCF79006E15EB /* Sale.swift */; };
-		2F3FD27B1DF1CA9D00AFE5CF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4641DCBCFFE006E15EB /* Product.swift */; };
-		2F3FD27C1DF1CAA000AFE5CF /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F46A1DCBD12E006E15EB /* Worker.swift */; };
-		2F3FD27D1DF1CAA700AFE5CF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45A1DCBC8A9006E15EB /* Global.swift */; };
-		2F3FD27E1DF1CAAD00AFE5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641821DCBA0DE006CCBF6 /* AppDelegate.swift */; };
-		2F3FD27F1DF1CAC000AFE5CF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4661DCBD087006E15EB /* Client.swift */; };
-		2F3FD2801DF1CACB00AFE5CF /* ProductCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0BDD1DD7A41300D42A21 /* ProductCode.swift */; };
-		2F3FD2811DF1CAD500AFE5CF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4681DCBD0DA006E15EB /* Category.swift */; };
-		2F3FD2821DF1CAF900AFE5CF /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */; };
 		2F3FD2831DF1CDE800AFE5CF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45A1DCBC8A9006E15EB /* Global.swift */; };
 		2F41E7C21DF1FFF400C35A7C /* AddClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E7C11DF1FFF400C35A7C /* AddClientController.swift */; };
 		2F41E7C41DF2048C00C35A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F41E7C31DF2048C00C35A7C /* Assets.xcassets */; };
@@ -37,7 +27,6 @@
 		2F4D5E3E1DEEFAF90084F796 /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D5E3C1DEEFAF90084F796 /* ClientCell.swift */; };
 		2F4D5E3F1DEEFAF90084F796 /* ClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D5E3D1DEEFAF90084F796 /* ClientCell.xib */; };
 		2F4D5E411DEEFFD60084F796 /* ClientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D5E401DEEFFD60084F796 /* ClientsController.swift */; };
-		2F74FBF71DF1BF3C0075B230 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4601DCBCE82006E15EB /* Order.swift */; };
 		2F794BA21E4C051F00FE2C6D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F794BA11E4C051F00FE2C6D /* Alert.swift */; };
 		2F794BA41E4C46FB00FE2C6D /* ScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F794BA31E4C46FB00FE2C6D /* ScanerView.swift */; };
 		2F7A24C71DCF95C700B5268A /* OrderDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A24C61DCF95C700B5268A /* OrderDetailController.swift */; };
@@ -54,14 +43,17 @@
 		2F9641BA1DCBA22F006CCBF6 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641B71DCBA22F006CCBF6 /* ReportController.swift */; };
 		2F9641BB1DCBA22F006CCBF6 /* ReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9641B81DCBA22F006CCBF6 /* ReportCell.xib */; };
 		2F9641BC1DCBA22F006CCBF6 /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641B91DCBA22F006CCBF6 /* ReportCell.swift */; };
-		2FC0D99C1E4AD85E0063A1E9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45D1DCBCE21006E15EB /* API.swift */; };
-		2FC0D99D1E4AD8650063A1E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */; };
 		2FC0D9A01E4AE6350063A1E9 /* ListOfChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0D99F1E4AE6350063A1E9 /* ListOfChannelController.swift */; };
+		2FD2F60B1E6C6D8400D9D583 /* Alamofire.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F74FBF81DF1BFAC0075B230 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD2F60F1E6C6E6F00D9D583 /* Charts.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F60C1E6C6D8C00D9D583 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD2F6121E6C6EB200D9D583 /* DropDown.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6101E6C6EAD00D9D583 /* DropDown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2FD2F61F1E6C6EF200D9D583 /* FontAwesome_swift.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6131E6C6EEA00D9D583 /* FontAwesome_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD2F6201E6C6EF200D9D583 /* iCarousel.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6141E6C6EEA00D9D583 /* iCarousel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD2F6211E6C6EF200D9D583 /* Realm.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6151E6C6EEA00D9D583 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD2F6221E6C6EF200D9D583 /* RealmSwift.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6161E6C6EEA00D9D583 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD2F6231E6C6EF200D9D583 /* SCLAlertView.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6171E6C6EEA00D9D583 /* SCLAlertView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD2F6241E6C6EF200D9D583 /* SwiftyJSON.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6181E6C6EEA00D9D583 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FDA2A411DCF6D9E00D589A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */; };
-		2FDC05871DF1B1A200A4F0CE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDC05861DF1B1A200A4F0CE /* NotificationCenter.framework */; };
-		2FDC058A1DF1B1A200A4F0CE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */; };
-		2FDC058D1DF1B1A200A4F0CE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDC058B1DF1B1A200A4F0CE /* MainInterface.storyboard */; };
-		2FDC05911DF1B1A200A4F0CE /* Shop-System-Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2FDC84431DF33EB200245213 /* AddProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC84421DF33EB200245213 /* AddProductController.swift */; };
 		2FE124011DD29E0400792531 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */; };
 		2FE124021DD29E0400792531 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */; };
@@ -84,7 +76,7 @@
 		2FF9FE031DEA694C00A353BF /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF21DEA694C00A353BF /* FSCalendarStickyHeader.m */; };
 		2FF9FE041DEA694C00A353BF /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF41DEA694C00A353BF /* FSCalendarWeekdayView.m */; };
 		2FF9FE051DEA694C00A353BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF51DEA694C00A353BF /* Info.plist */; };
-		8F36407DF38197E377C16D45 /* Pods_Shop_System_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA58CDEDA33DB15A254B7252 /* Pods_Shop_System_Widget.framework */; };
+		80D07EA53B5A8F580073D611 /* Pods_Shop_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7686F2F19289EF9F8893A1C3 /* Pods_Shop_System.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,23 +94,24 @@
 			remoteGlobalIDString = 2F96417E1DCBA0DE006CCBF6;
 			remoteInfo = "Shop System";
 		};
-		2FDC058F1DF1B1A200A4F0CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F9641771DCBA0DE006CCBF6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2FDC05841DF1B1A200A4F0CE;
-			remoteInfo = "Shop-System Widget";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2FDC05951DF1B1A200A4F0CE /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolderSpec = 10;
 			files = (
-				2FDC05911DF1B1A200A4F0CE /* Shop-System-Widget.appex in Embed App Extensions */,
+				2FD2F61F1E6C6EF200D9D583 /* FontAwesome_swift.framework in Embed App Extensions */,
+				2FD2F6201E6C6EF200D9D583 /* iCarousel.framework in Embed App Extensions */,
+				2FD2F6211E6C6EF200D9D583 /* Realm.framework in Embed App Extensions */,
+				2FD2F6221E6C6EF200D9D583 /* RealmSwift.framework in Embed App Extensions */,
+				2FD2F6231E6C6EF200D9D583 /* SCLAlertView.framework in Embed App Extensions */,
+				2FD2F6241E6C6EF200D9D583 /* SwiftyJSON.framework in Embed App Extensions */,
+				2FD2F6121E6C6EB200D9D583 /* DropDown.framework in Embed App Extensions */,
+				2FD2F60F1E6C6E6F00D9D583 /* Charts.framework in Embed App Extensions */,
+				2FD2F60B1E6C6D8400D9D583 /* Alamofire.framework in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,8 +120,6 @@
 
 /* Begin PBXFileReference section */
 		03C6B0C8E9B1FDD22EAA42AA /* Pods-Shop-System-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System-Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System-Widget/Pods-Shop-System-Widget.release.xcconfig"; sourceTree = "<group>"; };
-		1347DCADC7F6BC6694E99FE7 /* Pods_Shop_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shop_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		215261B0E245910205B49D29 /* Pods-Shop System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop System.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop System/Pods-Shop System.release.xcconfig"; sourceTree = "<group>"; };
 		2F32F45A1DCBC8A9006E15EB /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		2F32F45D1DCBCE21006E15EB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2F32F4601DCBCE82006E15EB /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -141,9 +132,7 @@
 		2F3E163A1DD0779C00DC0FEC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2F3E84431E4B057D0020AC32 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/Main.strings"; sourceTree = "<group>"; };
 		2F3E84441E4B057D0020AC32 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		2F3E84451E4B057D0020AC32 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		2F41E7BF1DF1D69600C35A7C /* Shop-System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shop-System.entitlements"; sourceTree = "<group>"; };
-		2F41E7C01DF1D6DF00C35A7C /* Shop-System-Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shop-System-Widget.entitlements"; sourceTree = SOURCE_ROOT; };
 		2F41E7C11DF1FFF400C35A7C /* AddClientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClientController.swift; sourceTree = "<group>"; };
 		2F41E7C31DF2048C00C35A7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F41E7C61DF211E700C35A7C /* ProductsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
@@ -179,12 +168,16 @@
 		2F9641B91DCBA22F006CCBF6 /* ReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
 		2FC0D99B1E4AC8790063A1E9 /* Shop_System-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shop_System-Bridging-Header.h"; sourceTree = "<group>"; };
 		2FC0D99F1E4AE6350063A1E9 /* ListOfChannelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfChannelController.swift; sourceTree = "<group>"; };
+		2FD2F60C1E6C6D8C00D9D583 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/Charts/Charts.framework"; sourceTree = "<group>"; };
+		2FD2F6101E6C6EAD00D9D583 /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/DropDown/DropDown.framework"; sourceTree = "<group>"; };
+		2FD2F6131E6C6EEA00D9D583 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome_swift.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/FontAwesome.swift/FontAwesome_swift.framework"; sourceTree = "<group>"; };
+		2FD2F6141E6C6EEA00D9D583 /* iCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iCarousel.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/iCarousel/iCarousel.framework"; sourceTree = "<group>"; };
+		2FD2F6151E6C6EEA00D9D583 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		2FD2F6161E6C6EEA00D9D583 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		2FD2F6171E6C6EEA00D9D583 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/SCLAlertView/SCLAlertView.framework"; sourceTree = "<group>"; };
+		2FD2F6181E6C6EEA00D9D583 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shop-System-Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDC05861DF1B1A200A4F0CE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		2FDC058C1DF1B1A200A4F0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		2FDC058E1DF1B1A200A4F0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FDC84421DF33EB200245213 /* AddProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductController.swift; sourceTree = "<group>"; };
 		2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extension.swift"; path = "../../../Downloads/NSDate-TimeAgo-master/NSDate+Extension.swift"; sourceTree = "<group>"; };
 		2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NSDateTimeAgo.bundle; path = "../../../Downloads/NSDate-TimeAgo-master/NSDateTimeAgo.bundle"; sourceTree = "<group>"; };
@@ -222,10 +215,8 @@
 		2FF9FDF31DEA694C00A353BF /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
 		2FF9FDF41DEA694C00A353BF /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
 		2FF9FDF51DEA694C00A353BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5340BB77EC929CEC2C610F0B /* Pods-Shop System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop System.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop System/Pods-Shop System.debug.xcconfig"; sourceTree = "<group>"; };
-		568CABB107002FD11A04778F /* Pods-Shop-System Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System Widget/Pods-Shop-System Widget.debug.xcconfig"; sourceTree = "<group>"; };
 		5ADB2BBAA4B758AA34DFBA6F /* Pods-Shop-System-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System-Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System-Widget/Pods-Shop-System-Widget.debug.xcconfig"; sourceTree = "<group>"; };
-		604FAC9159262D23A11680B5 /* Pods-Shop-System Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System Widget/Pods-Shop-System Widget.release.xcconfig"; sourceTree = "<group>"; };
+		7686F2F19289EF9F8893A1C3 /* Pods_Shop_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shop_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD03389FEA2CFA460D14B4D /* Pods-Shop-System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3D92B37388A6831E3A503F /* Pods-Shop-System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System.release.xcconfig"; sourceTree = "<group>"; };
 		EA58CDEDA33DB15A254B7252 /* Pods_Shop_System_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shop_System_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3E163B1DD0779C00DC0FEC /* AudioToolbox.framework in Frameworks */,
-				14C5D3A2E07B677D43A0EB0F /* Pods_Shop_System.framework in Frameworks */,
+				80D07EA53B5A8F580073D611 /* Pods_Shop_System.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,15 +243,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2FDC05821DF1B1A200A4F0CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2FDC05871DF1B1A200A4F0CE /* NotificationCenter.framework in Frameworks */,
-				8F36407DF38197E377C16D45 /* Pods_Shop_System_Widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +362,6 @@
 				2F9641811DCBA0DE006CCBF6 /* Shop System */,
 				2F9641991DCBA0DE006CCBF6 /* Shop SystemTests */,
 				2F9641A41DCBA0DE006CCBF6 /* Shop SystemUITests */,
-				2FDC05881DF1B1A200A4F0CE /* Shop-System-Widget */,
 				2F9641801DCBA0DE006CCBF6 /* Products */,
 				F1F39501C5D6CD85FC480201 /* Pods */,
 				D0F07BB20F2CB196F9F0C822 /* Frameworks */,
@@ -393,7 +374,6 @@
 				2F96417F1DCBA0DE006CCBF6 /* Shop-System.app */,
 				2F9641961DCBA0DE006CCBF6 /* Shop SystemTests.xctest */,
 				2F9641A11DCBA0DE006CCBF6 /* Shop SystemUITests.xctest */,
-				2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -471,18 +451,6 @@
 			name = ScanerController;
 			sourceTree = "<group>";
 		};
-		2FDC05881DF1B1A200A4F0CE /* Shop-System-Widget */ = {
-			isa = PBXGroup;
-			children = (
-				2F41E7C01DF1D6DF00C35A7C /* Shop-System-Widget.entitlements */,
-				2FDC05891DF1B1A200A4F0CE /* TodayViewController.swift */,
-				2FDC058B1DF1B1A200A4F0CE /* MainInterface.storyboard */,
-				2FDC058E1DF1B1A200A4F0CE /* Info.plist */,
-			);
-			name = "Shop-System-Widget";
-			path = "Shop-System Widget";
-			sourceTree = "<group>";
-		};
 		2FE123FE1DD29DDA00792531 /* TimeAgo */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,11 +510,19 @@
 		D0F07BB20F2CB196F9F0C822 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FD2F6131E6C6EEA00D9D583 /* FontAwesome_swift.framework */,
+				2FD2F6141E6C6EEA00D9D583 /* iCarousel.framework */,
+				2FD2F6151E6C6EEA00D9D583 /* Realm.framework */,
+				2FD2F6161E6C6EEA00D9D583 /* RealmSwift.framework */,
+				2FD2F6171E6C6EEA00D9D583 /* SCLAlertView.framework */,
+				2FD2F6181E6C6EEA00D9D583 /* SwiftyJSON.framework */,
+				2FD2F6101E6C6EAD00D9D583 /* DropDown.framework */,
+				2FD2F60C1E6C6D8C00D9D583 /* Charts.framework */,
 				2F74FBF81DF1BFAC0075B230 /* Alamofire.framework */,
 				2F3E163A1DD0779C00DC0FEC /* AudioToolbox.framework */,
-				1347DCADC7F6BC6694E99FE7 /* Pods_Shop_System.framework */,
 				2FDC05861DF1B1A200A4F0CE /* NotificationCenter.framework */,
 				EA58CDEDA33DB15A254B7252 /* Pods_Shop_System_Widget.framework */,
+				7686F2F19289EF9F8893A1C3 /* Pods_Shop_System.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -554,12 +530,8 @@
 		F1F39501C5D6CD85FC480201 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5340BB77EC929CEC2C610F0B /* Pods-Shop System.debug.xcconfig */,
-				215261B0E245910205B49D29 /* Pods-Shop System.release.xcconfig */,
 				8FD03389FEA2CFA460D14B4D /* Pods-Shop-System.debug.xcconfig */,
 				AC3D92B37388A6831E3A503F /* Pods-Shop-System.release.xcconfig */,
-				568CABB107002FD11A04778F /* Pods-Shop-System Widget.debug.xcconfig */,
-				604FAC9159262D23A11680B5 /* Pods-Shop-System Widget.release.xcconfig */,
 				5ADB2BBAA4B758AA34DFBA6F /* Pods-Shop-System-Widget.debug.xcconfig */,
 				03C6B0C8E9B1FDD22EAA42AA /* Pods-Shop-System-Widget.release.xcconfig */,
 			);
@@ -577,14 +549,12 @@
 				2F96417B1DCBA0DE006CCBF6 /* Sources */,
 				2F96417C1DCBA0DE006CCBF6 /* Frameworks */,
 				2F96417D1DCBA0DE006CCBF6 /* Resources */,
-				0B779CEAFBCEE03B4995CFC1 /* [CP] Embed Pods Frameworks */,
 				E3AEDDADF8BDFFCE0FBAB31F /* [CP] Copy Pods Resources */,
 				2FDC05951DF1B1A200A4F0CE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2FDC05901DF1B1A200A4F0CE /* PBXTargetDependency */,
 			);
 			name = "Shop-System";
 			productName = "Shop System";
@@ -627,25 +597,6 @@
 			productReference = 2F9641A11DCBA0DE006CCBF6 /* Shop SystemUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		2FDC05841DF1B1A200A4F0CE /* Shop-System-Widget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2FDC05941DF1B1A200A4F0CE /* Build configuration list for PBXNativeTarget "Shop-System-Widget" */;
-			buildPhases = (
-				D4C5BD03E2AE8FF2669C69BD /* [CP] Check Pods Manifest.lock */,
-				2FDC05811DF1B1A200A4F0CE /* Sources */,
-				2FDC05821DF1B1A200A4F0CE /* Frameworks */,
-				2FDC05831DF1B1A200A4F0CE /* Resources */,
-				70B37E2E23379FF7BDF3F3A6 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Shop-System-Widget";
-			productName = "Shop-System Widget";
-			productReference = 2FDC05851DF1B1A200A4F0CE /* Shop-System-Widget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -662,7 +613,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -677,16 +628,6 @@
 						DevelopmentTeam = DSX6W75YR7;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2F96417E1DCBA0DE006CCBF6;
-					};
-					2FDC05841DF1B1A200A4F0CE = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = DSX6W75YR7;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
@@ -706,7 +647,6 @@
 				2F96417E1DCBA0DE006CCBF6 /* Shop-System */,
 				2F9641951DCBA0DE006CCBF6 /* Shop SystemTests */,
 				2F9641A01DCBA0DE006CCBF6 /* Shop SystemUITests */,
-				2FDC05841DF1B1A200A4F0CE /* Shop-System-Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -743,63 +683,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FDC05831DF1B1A200A4F0CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2FDC058D1DF1B1A200A4F0CE /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B779CEAFBCEE03B4995CFC1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		25F222E7DF92C7FE46817C8A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		70B37E2E23379FF7BDF3F3A6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shop-System-Widget/Pods-Shop-System-Widget-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4C5BD03E2AE8FF2669C69BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -853,7 +740,6 @@
 				2F9641BA1DCBA22F006CCBF6 /* ReportController.swift in Sources */,
 				2FF9FE041DEA694C00A353BF /* FSCalendarWeekdayView.m in Sources */,
 				2FEF0BDC1DD79F1800D42A21 /* ShowProductController.swift in Sources */,
-				2F3FD2821DF1CAF900AFE5CF /* TodayViewController.swift in Sources */,
 				2F32F4611DCBCE82006E15EB /* Order.swift in Sources */,
 				2F32F4671DCBD087006E15EB /* Client.swift in Sources */,
 				2FF9FE021DEA694C00A353BF /* FSCalendarScopeHandle.m in Sources */,
@@ -903,25 +789,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FDC05811DF1B1A200A4F0CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2FC0D99C1E4AD85E0063A1E9 /* API.swift in Sources */,
-				2F3FD27E1DF1CAAD00AFE5CF /* AppDelegate.swift in Sources */,
-				2F74FBF71DF1BF3C0075B230 /* Order.swift in Sources */,
-				2F3FD27C1DF1CAA000AFE5CF /* Worker.swift in Sources */,
-				2F3FD27B1DF1CA9D00AFE5CF /* Product.swift in Sources */,
-				2F3FD27A1DF1CA8900AFE5CF /* Sale.swift in Sources */,
-				2FDC058A1DF1B1A200A4F0CE /* TodayViewController.swift in Sources */,
-				2FC0D99D1E4AD8650063A1E9 /* Extensions.swift in Sources */,
-				2F3FD27D1DF1CAA700AFE5CF /* Global.swift in Sources */,
-				2F3FD2801DF1CACB00AFE5CF /* ProductCode.swift in Sources */,
-				2F3FD27F1DF1CAC000AFE5CF /* Client.swift in Sources */,
-				2F3FD2811DF1CAD500AFE5CF /* Category.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -934,11 +801,6 @@
 			isa = PBXTargetDependency;
 			target = 2F96417E1DCBA0DE006CCBF6 /* Shop-System */;
 			targetProxy = 2F9641A21DCBA0DE006CCBF6 /* PBXContainerItemProxy */;
-		};
-		2FDC05901DF1B1A200A4F0CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2FDC05841DF1B1A200A4F0CE /* Shop-System-Widget */;
-			targetProxy = 2FDC058F1DF1B1A200A4F0CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -959,15 +821,6 @@
 				2F3E84441E4B057D0020AC32 /* ru-RU */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		2FDC058B1DF1B1A200A4F0CE /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2FDC058C1DF1B1A200A4F0CE /* Base */,
-				2F3E84451E4B057D0020AC32 /* ru-RU */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1001,6 +854,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1053,6 +907,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1078,10 +933,14 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Shop-System.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DSX6W75YR7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shop\\ System",
+					"$(PROJECT_DIR)/Shop\\ System",
+				);
 				INFOPLIST_FILE = "Shop System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System";
@@ -1102,10 +961,14 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "Shop-System.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DSX6W75YR7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shop\\ System",
+					"$(PROJECT_DIR)/Shop\\ System",
+				);
 				INFOPLIST_FILE = "Shop System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System";
@@ -1177,42 +1040,6 @@
 			};
 			name = Release;
 		};
-		2FDC05921DF1B1A200A4F0CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ADB2BBAA4B758AA34DFBA6F /* Pods-Shop-System-Widget.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_ENTITLEMENTS = "Shop-System-Widget.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DSX6W75YR7;
-				INFOPLIST_FILE = "Shop-System Widget/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System.Shop-System-Widget1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		2FDC05931DF1B1A200A4F0CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03C6B0C8E9B1FDD22EAA42AA /* Pods-Shop-System-Widget.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_ENTITLEMENTS = "Shop-System-Widget.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DSX6W75YR7;
-				INFOPLIST_FILE = "Shop-System Widget/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System.Shop-System-Widget1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1248,15 +1075,6 @@
 			buildConfigurations = (
 				2F9641B11DCBA0DF006CCBF6 /* Debug */,
 				2F9641B21DCBA0DF006CCBF6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2FDC05941DF1B1A200A4F0CE /* Build configuration list for PBXNativeTarget "Shop-System-Widget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2FDC05921DF1B1A200A4F0CE /* Debug */,
-				2FDC05931DF1B1A200A4F0CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

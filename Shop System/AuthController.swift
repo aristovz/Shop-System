@@ -61,9 +61,12 @@ class AuthController: UIViewController, UITextFieldDelegate {
             .responseJSON { (response) in
                 let res = response.result.value! as! NSDictionary
                 
-                if (res["success"] as! Bool) {
+                if res["error"] != nil {
+                    self.usernameTextField.shake()
+                    self.passwordTextField.shake()
+                }
+                else if (res["success"] as! Bool) {
                     print("Успешная авторизация!\naccess_token = \(res["access_token"]!)")
-                    
                     
                     Global.access_token = res["access_token"]! as? String
                     Global.appDelegate.loadMenuController(parentViewController: self)

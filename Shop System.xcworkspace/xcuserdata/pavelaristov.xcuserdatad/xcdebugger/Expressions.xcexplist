@@ -367,6 +367,11 @@
       </ContextState>
       <ContextState
          contextName = "AuthController.(loginAction(UIButton) -&gt; ()).(closure #1):AuthController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "res[&quot;error&quot;] == nil">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "ReportController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():ReportController.swift">

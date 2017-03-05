@@ -183,6 +183,22 @@ class API {
             }
         }
         
+        class func deleteProduct(id: Int, requestEnd:@escaping (Bool?) -> ()) {
+            let parameters = ["id" : id,
+                              "access_token" : Global.access_token!] as [String : Any]
+            
+            Alamofire.request(Global.urlPath + "product.delete", method: .post, parameters: parameters).responseJSON { (response) in
+                //print(response.result.value)
+                
+                if response.result.value != nil {
+                    requestEnd(JSON(response.result.value!)["result"].boolValue)
+                }
+                else {
+                    requestEnd(nil)
+                }
+            }
+        }
+        
         class func getAllProducts(needDeleted: Bool = false, requestEnd:@escaping ([Product]) -> ()) {
             var products = [Product]()
             Alamofire.request(Global.urlPath + "product.getAll", method: .get, parameters: ["needDeleted" : needDeleted ? 1 : 0, "access_token" : Global.access_token!]).responseJSON { (response) in

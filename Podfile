@@ -11,11 +11,8 @@ target 'Shop-System' do
   pod 'RealmSwift', '~> 2.0.2'
   pod 'DropDown'
   pod 'SCLAlertView'
-end
-
-target 'Shop-System-Widget’ do
-  pod 'Alamofire', '~> 4.0'
-  pod 'SwiftyJSON'
+  pod 'Fabric'
+  pod 'Crashlytics'
 end
 
 post_install do |installer|

@@ -256,6 +256,10 @@ class AllReportController: UIViewController, ChartViewDelegate {
     }
     
     func fillShowOrder(index: Int) {
+        if index == 12 || index == 0 {
+            return
+        }
+        
         let currValue = showOrders[index]
         allSumLabel.text = String(format: "%g ₽", currValue.sum)
         avgSumLabel.text = String(format: "%g ₽", currValue.avgSum)

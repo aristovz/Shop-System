@@ -19,6 +19,8 @@ class ProductsController: UIViewController {
     var products = Dictionary<Int, [Product]>()
     var subcategories = [Category]()
     
+    var countProducts: Int = 0
+    
     var currentCategory: Category? = nil
 
     override func viewDidLoad() {
@@ -124,6 +126,27 @@ extension ProductsController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+            if let currentProduct = products[currentCategory!.id]?[indexPath.row] {
+                products[currentCategory!.id]?.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .automatic)
+                
+                API.ProductsManager.deleteProduct(id: currentProduct.id, requestEnd: { (result) in
+                    if let res = result {
+                        if result == false {
+                            self.tableView.reloadData()
+                        }
+                    }
+                })
+            }
+        }
+    }
 }
 
 extension ProductsController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -141,9 +164,25 @@ extension ProductsController: UICollectionViewDelegate, UICollectionViewDataSour
         let currentCategory = subcategories[indexPath.row]
         
         cell.categoryNameLabel.text = currentCategory.name
-        cell.countProductsLabel.text = "\(products[currentCategory.id]!.count) продуктов"
+        
+        countProducts = 0
+        getCountProducts(category: currentCategory)
+        
+        cell.countProductsLabel.text = "\(countProducts) продуктов"
         
         return cell
+    }
+    
+    func getCountProducts(category: Category) {
+        for cat in categories {
+            if cat.parentID == category.id {
+                getCountProducts(category: cat)
+            }
+        }
+        
+        if let count = products[category.id]?.count {
+            countProducts += count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

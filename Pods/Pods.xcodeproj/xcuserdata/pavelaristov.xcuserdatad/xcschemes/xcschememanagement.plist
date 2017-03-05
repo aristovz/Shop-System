@@ -29,11 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Shop-System-Widget.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Shop-System.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -78,11 +73,6 @@
 			<true/>
 		</dict>
 		<key>675863AEAEEA6782B0C7C2A0F0A11BBE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>72FED0E6DC16EFBB2A7E0A69AABB4137</key>
 		<dict>
 			<key>primary</key>
 			<true/>
