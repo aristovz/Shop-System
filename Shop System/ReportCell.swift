@@ -38,9 +38,9 @@ class ReportCell: UITableViewCell {
         tableView.dataSource = self
         tableView.delegate = self
     
-        userIcon.image = UIImage.fontAwesomeIconWithName(name: .User , textColor: .darkGray, size: CGSize(width: 34, height: 34))
-        procentIcon.image = UIImage.fontAwesomeIconWithName(name: .Percent, textColor: .lightGray, size: CGSize(width: 12, height: 12))
-        clockIcon.image = UIImage.fontAwesomeIconWithName(name: .ClockO, textColor: .lightGray, size: CGSize(width: 12, height: 12))
+        userIcon.image = UIImage.fontAwesomeIcon(name: .user , textColor: .darkGray, size: CGSize(width: 34, height: 34))
+        procentIcon.image = UIImage.fontAwesomeIcon(name: .percent, textColor: .lightGray, size: CGSize(width: 12, height: 12))
+        clockIcon.image = UIImage.fontAwesomeIcon(name: .clockO, textColor: .lightGray, size: CGSize(width: 12, height: 12))
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

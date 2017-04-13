@@ -42,12 +42,6 @@ class AuthController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
-        let _parameters: [String: Any] = [
-            "username": "test",
-            "password": "test",
-            "saveToken": 1
-        ]
-        
         let username = usernameTextField.text!
         let pass = passwordTextField.text!
         

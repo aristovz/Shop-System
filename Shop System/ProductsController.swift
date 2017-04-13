@@ -139,7 +139,7 @@ extension ProductsController: UITableViewDelegate, UITableViewDataSource {
                 
                 API.ProductsManager.deleteProduct(id: currentProduct.id, requestEnd: { (result) in
                     if let res = result {
-                        if result == false {
+                        if res == false {
                             self.tableView.reloadData()
                         }
                     }

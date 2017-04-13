@@ -73,6 +73,7 @@ class AllReportController: UIViewController, ChartViewDelegate {
             }
             //self.setChartData()
         }
+        
     }
     
     override func viewDidLoad() {

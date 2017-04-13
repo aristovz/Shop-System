@@ -58,7 +58,7 @@
          contextName = "static API.OrdersManager.(getAllOrdersWithSales(requestEnd : ([Order]) -&gt; ()) -&gt; ()).(closure #1).(closure #1):API.swift">
          <PersistentStrings>
             <PersistentString
-               value = "String(json[&quot;orders&quot;].arrayValue[0][&quot;date&quot;]).dateFromISO8601">
+               value = "order[&quot;clientID&quot;].intValue">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -501,6 +501,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "static API.CategoriesManager.getAllCategories(requestEnd : ([Category]) -&gt; ()) -&gt; ():API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Global.urlPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ReportController.numberOfSections(in : UITableView) -&gt; Int:ReportController.swift">
          <PersistentStrings>
             <PersistentString
@@ -520,7 +528,15 @@
          contextName = "JSON.object.setter:SwiftyJSON.swift">
          <PersistentStrings>
             <PersistentString
-               value = "newValue as? Int">
+               value = "(dictionary as! [String: AnyObject])[&quot;orders&quot;] as? Array">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "JSON.init(jsonObject : Any) -&gt; JSON:SwiftyJSON.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonObject as! NSDictionary">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -590,7 +606,16 @@
          contextName = "static API.OrdersManager.(getAllOrdersWithSalesInDays(days : [Date], requestEnd : ([Order]) -&gt; ()) -&gt; ()).(closure #1).(closure #2):API.swift">
          <PersistentStrings>
             <PersistentString
-               value = "print(response.result.value)">
+               value = "print(json[&quot;orders&quot;].arrayValue[0][&quot;clientID&quot;].intValue)">
+            </PersistentString>
+            <PersistentString
+               value = "print(response.result.value ?? &quot;123&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;orders&quot;][3][&quot;date&quot;].string">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;orders&quot;][3][&quot;clientID&quot;].intValue">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -681,6 +706,14 @@
             </PersistentString>
             <PersistentString
                value = "tabBar?.items![2].title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "JSON.init(Any) -&gt; JSON:SwiftyJSON.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "object as! NSDictionary">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

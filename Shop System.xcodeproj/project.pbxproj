@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1610841E9555CC0083B9BC /* FontAwesome_swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD2F6131E6C6EEA00D9D583 /* FontAwesome_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F32F45E1DCBCE21006E15EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45D1DCBCE21006E15EB /* API.swift */; };
 		2F32F4611DCBCE82006E15EB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4601DCBCE82006E15EB /* Order.swift */; };
 		2F32F4631DCBCF79006E15EB /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4621DCBCF79006E15EB /* Sale.swift */; };
@@ -15,7 +16,6 @@
 		2F32F4691DCBD0DA006E15EB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F4681DCBD0DA006E15EB /* Category.swift */; };
 		2F32F46B1DCBD12E006E15EB /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F46A1DCBD12E006E15EB /* Worker.swift */; };
 		2F3E16391DD0624E00DC0FEC /* ScanerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E16381DD0624E00DC0FEC /* ScanerController.swift */; };
-		2F3E163B1DD0779C00DC0FEC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3E163A1DD0779C00DC0FEC /* AudioToolbox.framework */; };
 		2F3FD2831DF1CDE800AFE5CF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32F45A1DCBC8A9006E15EB /* Global.swift */; };
 		2F41E7C21DF1FFF400C35A7C /* AddClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E7C11DF1FFF400C35A7C /* AddClientController.swift */; };
 		2F41E7C41DF2048C00C35A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F41E7C31DF2048C00C35A7C /* Assets.xcassets */; };
@@ -32,6 +32,8 @@
 		2F7A24C71DCF95C700B5268A /* OrderDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A24C61DCF95C700B5268A /* OrderDetailController.swift */; };
 		2F7A24CE1DCF98AD00B5268A /* SaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A24CC1DCF98AD00B5268A /* SaleCell.swift */; };
 		2F7A24CF1DCF98AD00B5268A /* SaleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7A24CD1DCF98AD00B5268A /* SaleCell.xib */; };
+		2F7DCF351E994CCE009D61D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5CFBBC1E6DE56800B2BB02 /* Alamofire.framework */; };
+		2F7DCF361E994CCE009D61D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5CFBBC1E6DE56800B2BB02 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F959DE71DEA715A00E6CA28 /* DIYCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F959DE61DEA715A00E6CA28 /* DIYCalendarCell.swift */; };
 		2F9641831DCBA0DE006CCBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641821DCBA0DE006CCBF6 /* AppDelegate.swift */; };
 		2F9641881DCBA0DE006CCBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9641861DCBA0DE006CCBF6 /* Main.storyboard */; };
@@ -44,19 +46,10 @@
 		2F9641BB1DCBA22F006CCBF6 /* ReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9641B81DCBA22F006CCBF6 /* ReportCell.xib */; };
 		2F9641BC1DCBA22F006CCBF6 /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9641B91DCBA22F006CCBF6 /* ReportCell.swift */; };
 		2FC0D9A01E4AE6350063A1E9 /* ListOfChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0D99F1E4AE6350063A1E9 /* ListOfChannelController.swift */; };
-		2FD2F60B1E6C6D8400D9D583 /* Alamofire.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F74FBF81DF1BFAC0075B230 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD2F60F1E6C6E6F00D9D583 /* Charts.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F60C1E6C6D8C00D9D583 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD2F6121E6C6EB200D9D583 /* DropDown.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6101E6C6EAD00D9D583 /* DropDown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2FD2F61F1E6C6EF200D9D583 /* FontAwesome_swift.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6131E6C6EEA00D9D583 /* FontAwesome_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD2F6201E6C6EF200D9D583 /* iCarousel.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6141E6C6EEA00D9D583 /* iCarousel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD2F6211E6C6EF200D9D583 /* Realm.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6151E6C6EEA00D9D583 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD2F6221E6C6EF200D9D583 /* RealmSwift.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6161E6C6EEA00D9D583 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD2F6231E6C6EF200D9D583 /* SCLAlertView.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6171E6C6EEA00D9D583 /* SCLAlertView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD2F6241E6C6EF200D9D583 /* SwiftyJSON.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FD2F6181E6C6EEA00D9D583 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FCB0ABC1E83313D00D75F0B /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB0ABA1E83313D00D75F0B /* NSDate+Extension.swift */; };
+		2FCB0ABD1E83313D00D75F0B /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB0ABB1E83313D00D75F0B /* NSDateTimeAgo.bundle */; };
 		2FDA2A411DCF6D9E00D589A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */; };
 		2FDC84431DF33EB200245213 /* AddProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC84421DF33EB200245213 /* AddProductController.swift */; };
-		2FE124011DD29E0400792531 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */; };
-		2FE124021DD29E0400792531 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */; };
 		2FE353041DDF98FC00F5D6C4 /* AllReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE353031DDF98FC00F5D6C4 /* AllReportController.swift */; };
 		2FEF0BDC1DD79F1800D42A21 /* ShowProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0BDB1DD79F1800D42A21 /* ShowProductController.swift */; };
 		2FEF0BDE1DD7A41300D42A21 /* ProductCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0BDD1DD7A41300D42A21 /* ProductCode.swift */; };
@@ -76,7 +69,7 @@
 		2FF9FE031DEA694C00A353BF /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF21DEA694C00A353BF /* FSCalendarStickyHeader.m */; };
 		2FF9FE041DEA694C00A353BF /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF41DEA694C00A353BF /* FSCalendarWeekdayView.m */; };
 		2FF9FE051DEA694C00A353BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9FDF51DEA694C00A353BF /* Info.plist */; };
-		80D07EA53B5A8F580073D611 /* Pods_Shop_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7686F2F19289EF9F8893A1C3 /* Pods_Shop_System.framework */; };
+		4CE46FCEA56337E2DBD9122A /* Pods_Shop_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7686F2F19289EF9F8893A1C3 /* Pods_Shop_System.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,29 +90,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2FDC05951DF1B1A200A4F0CE /* Embed App Extensions */ = {
+		2F1610851E9555CC0083B9BC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2FD2F61F1E6C6EF200D9D583 /* FontAwesome_swift.framework in Embed App Extensions */,
-				2FD2F6201E6C6EF200D9D583 /* iCarousel.framework in Embed App Extensions */,
-				2FD2F6211E6C6EF200D9D583 /* Realm.framework in Embed App Extensions */,
-				2FD2F6221E6C6EF200D9D583 /* RealmSwift.framework in Embed App Extensions */,
-				2FD2F6231E6C6EF200D9D583 /* SCLAlertView.framework in Embed App Extensions */,
-				2FD2F6241E6C6EF200D9D583 /* SwiftyJSON.framework in Embed App Extensions */,
-				2FD2F6121E6C6EB200D9D583 /* DropDown.framework in Embed App Extensions */,
-				2FD2F60F1E6C6E6F00D9D583 /* Charts.framework in Embed App Extensions */,
-				2FD2F60B1E6C6D8400D9D583 /* Alamofire.framework in Embed App Extensions */,
+				2F1610841E9555CC0083B9BC /* FontAwesome_swift.framework in Embed Frameworks */,
+				2F7DCF361E994CCE009D61D2 /* Alamofire.framework in Embed Frameworks */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03C6B0C8E9B1FDD22EAA42AA /* Pods-Shop-System-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop-System-Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop-System-Widget/Pods-Shop-System-Widget.release.xcconfig"; sourceTree = "<group>"; };
+		2F1538441E774BC300BAE851 /* Pods_Shop_System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Shop_System.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphonesimulator/Pods_Shop_System.framework"; sourceTree = "<group>"; };
 		2F32F45A1DCBC8A9006E15EB /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		2F32F45D1DCBCE21006E15EB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2F32F4601DCBCE82006E15EB /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -143,6 +130,7 @@
 		2F4D5E3C1DEEFAF90084F796 /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		2F4D5E3D1DEEFAF90084F796 /* ClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientCell.xib; sourceTree = "<group>"; };
 		2F4D5E401DEEFFD60084F796 /* ClientsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsController.swift; sourceTree = "<group>"; };
+		2F5CFBBC1E6DE56800B2BB02 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		2F74FBF81DF1BFAC0075B230 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		2F794BA11E4C051F00FE2C6D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2F794BA31E4C46FB00FE2C6D /* ScanerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanerView.swift; sourceTree = "<group>"; };
@@ -168,6 +156,8 @@
 		2F9641B91DCBA22F006CCBF6 /* ReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
 		2FC0D99B1E4AC8790063A1E9 /* Shop_System-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shop_System-Bridging-Header.h"; sourceTree = "<group>"; };
 		2FC0D99F1E4AE6350063A1E9 /* ListOfChannelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfChannelController.swift; sourceTree = "<group>"; };
+		2FCB0ABA1E83313D00D75F0B /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		2FCB0ABB1E83313D00D75F0B /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
 		2FD2F60C1E6C6D8C00D9D583 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/Charts/Charts.framework"; sourceTree = "<group>"; };
 		2FD2F6101E6C6EAD00D9D583 /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/DropDown/DropDown.framework"; sourceTree = "<group>"; };
 		2FD2F6131E6C6EEA00D9D583 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome_swift.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/FontAwesome.swift/FontAwesome_swift.framework"; sourceTree = "<group>"; };
@@ -177,10 +167,9 @@
 		2FD2F6171E6C6EEA00D9D583 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/SCLAlertView/SCLAlertView.framework"; sourceTree = "<group>"; };
 		2FD2F6181E6C6EEA00D9D583 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		2FDA2A401DCF6D9E00D589A0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2FDB5AB21E96D5ED0067243C /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../Library/Developer/Xcode/DerivedData/Shop_System-gqjnxbzqenjuhrfzdvapojwxmrul/Build/Products/Debug-iphonesimulator/Charts/Charts.framework"; sourceTree = "<group>"; };
 		2FDC05861DF1B1A200A4F0CE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		2FDC84421DF33EB200245213 /* AddProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductController.swift; sourceTree = "<group>"; };
-		2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extension.swift"; path = "../../../Downloads/NSDate-TimeAgo-master/NSDate+Extension.swift"; sourceTree = "<group>"; };
-		2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NSDateTimeAgo.bundle; path = "../../../Downloads/NSDate-TimeAgo-master/NSDateTimeAgo.bundle"; sourceTree = "<group>"; };
 		2FE353031DDF98FC00F5D6C4 /* AllReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllReportController.swift; sourceTree = "<group>"; };
 		2FEF0BDB1DD79F1800D42A21 /* ShowProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProductController.swift; sourceTree = "<group>"; };
 		2FEF0BDD1DD7A41300D42A21 /* ProductCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCode.swift; sourceTree = "<group>"; };
@@ -227,8 +216,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F3E163B1DD0779C00DC0FEC /* AudioToolbox.framework in Frameworks */,
-				80D07EA53B5A8F580073D611 /* Pods_Shop_System.framework in Frameworks */,
+				4CE46FCEA56337E2DBD9122A /* Pods_Shop_System.framework in Frameworks */,
+				2F7DCF351E994CCE009D61D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,8 +443,8 @@
 		2FE123FE1DD29DDA00792531 /* TimeAgo */ = {
 			isa = PBXGroup;
 			children = (
-				2FE123FF1DD29E0400792531 /* NSDate+Extension.swift */,
-				2FE124001DD29E0400792531 /* NSDateTimeAgo.bundle */,
+				2FCB0ABA1E83313D00D75F0B /* NSDate+Extension.swift */,
+				2FCB0ABB1E83313D00D75F0B /* NSDateTimeAgo.bundle */,
 			);
 			name = TimeAgo;
 			sourceTree = "<group>";
@@ -510,6 +499,9 @@
 		D0F07BB20F2CB196F9F0C822 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FDB5AB21E96D5ED0067243C /* Charts.framework */,
+				2F1538441E774BC300BAE851 /* Pods_Shop_System.framework */,
+				2F5CFBBC1E6DE56800B2BB02 /* Alamofire.framework */,
 				2FD2F6131E6C6EEA00D9D583 /* FontAwesome_swift.framework */,
 				2FD2F6141E6C6EEA00D9D583 /* iCarousel.framework */,
 				2FD2F6151E6C6EEA00D9D583 /* Realm.framework */,
@@ -550,7 +542,8 @@
 				2F96417C1DCBA0DE006CCBF6 /* Frameworks */,
 				2F96417D1DCBA0DE006CCBF6 /* Resources */,
 				E3AEDDADF8BDFFCE0FBAB31F /* [CP] Copy Pods Resources */,
-				2FDC05951DF1B1A200A4F0CE /* Embed App Extensions */,
+				C080F2D2E4A2C8F6B154D7BB /* [CP] Embed Pods Frameworks */,
+				2F1610851E9555CC0083B9BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -657,9 +650,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F41E7CD1DF2122900C35A7C /* ProductCell.xib in Resources */,
+				2FCB0ABD1E83313D00D75F0B /* NSDateTimeAgo.bundle in Resources */,
 				2F9641901DCBA0DE006CCBF6 /* LaunchScreen.storyboard in Resources */,
 				2F9641881DCBA0DE006CCBF6 /* Main.storyboard in Resources */,
-				2FE124021DD29E0400792531 /* NSDateTimeAgo.bundle in Resources */,
 				2F9641BB1DCBA22F006CCBF6 /* ReportCell.xib in Resources */,
 				2F41E7D11DF2124E00C35A7C /* CategoryCell.xib in Resources */,
 				2F7A24CF1DCF98AD00B5268A /* SaleCell.xib in Resources */,
@@ -699,6 +692,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C080F2D2E4A2C8F6B154D7BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shop-System/Pods-Shop-System-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3AEDDADF8BDFFCE0FBAB31F /* [CP] Copy Pods Resources */ = {
@@ -757,10 +765,10 @@
 				2FF9FE001DEA694C00A353BF /* FSCalendarExtensions.m in Sources */,
 				2F41E7C71DF211E800C35A7C /* ProductsController.swift in Sources */,
 				2F9641BC1DCBA22F006CCBF6 /* ReportCell.swift in Sources */,
-				2FE124011DD29E0400792531 /* NSDate+Extension.swift in Sources */,
 				2F41E7C21DF1FFF400C35A7C /* AddClientController.swift in Sources */,
 				2F32F45E1DCBCE21006E15EB /* API.swift in Sources */,
 				2FF9FDF71DEA694C00A353BF /* FSCalendar.m in Sources */,
+				2FCB0ABC1E83313D00D75F0B /* NSDate+Extension.swift in Sources */,
 				2FE353041DDF98FC00F5D6C4 /* AllReportController.swift in Sources */,
 				2FF9FDFA1DEA694C00A353BF /* FSCalendarCalculator.m in Sources */,
 				2F32F4691DCBD0DA006E15EB /* Category.swift in Sources */,
@@ -929,12 +937,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FD03389FEA2CFA460D14B4D /* Pods-Shop-System.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -942,7 +950,12 @@
 					"$(PROJECT_DIR)/Shop\\ System",
 				);
 				INFOPLIST_FILE = "Shop System/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shop System/Shop_System-Bridging-Header.h";
@@ -957,12 +970,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC3D92B37388A6831E3A503F /* Pods-Shop-System.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DSX6W75YR7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -970,7 +983,12 @@
 					"$(PROJECT_DIR)/Shop\\ System",
 				);
 				INFOPLIST_FILE = "Shop System/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "aristovz.Shop-System";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shop System/Shop_System-Bridging-Header.h";

@@ -1,28 +1,23 @@
 PODS:
-  - Alamofire (4.0.1)
-  - Charts (3.0.0):
-    - Charts/Core (= 3.0.0)
-  - Charts/Core (3.0.0)
-  - Crashlytics (3.8.2):
-    - Fabric (~> 1.6.3)
+  - Alamofire (4.4.0)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
   - DropDown (2)
-  - Fabric (1.6.10)
-  - FontAwesome.swift (0.9.0)
-  - iCarousel (1.8.2)
-  - Realm (2.0.2):
-    - Realm/Headers (= 2.0.2)
-  - Realm/Headers (2.0.2)
-  - RealmSwift (2.0.2):
-    - Realm (= 2.0.2)
+  - FontAwesome.swift (1.0.0)
+  - iCarousel (1.8.3)
+  - Realm (2.0.4):
+    - Realm/Headers (= 2.0.4)
+  - Realm/Headers (2.0.4)
+  - RealmSwift (2.0.4):
+    - Realm (= 2.0.4)
   - SCLAlertView (0.7.0)
-  - SwiftyJSON (3.1.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - Charts (from `https://github.com/danielgindi/Charts.git`, branch `master`)
-  - Crashlytics
   - DropDown
-  - Fabric
   - FontAwesome.swift
   - iCarousel
   - RealmSwift (~> 2.0.2)
@@ -36,22 +31,20 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Charts:
-    :commit: e51bfb07f0ddf4012250ac5d635d3f5dd5b3c973
+    :commit: f23e872e7573f8c79862ff4822cfc5683703d424
     :git: https://github.com/danielgindi/Charts.git
 
 SPEC CHECKSUMS:
-  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
-  Charts: 3f0da988b104c8e5f069fcef55da699f597dac67
-  Crashlytics: 27acca95a01b042a8294291dd6dff27f8f6af6d7
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Charts: e955b9a241a14a8971d70143002c8ab1610d26b6
   DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
-  Fabric: c73f371ee543e3f0b80608f2674750e4910d1669
-  FontAwesome.swift: 8744c24147e925c61e68d313a2837c7298e2a43f
-  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
-  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
-  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
+  FontAwesome.swift: 2d32a3d62195343c2004b7c9043294ed2948553a
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  Realm: 9da97f48365f8b99dd95c28d45ad8222d62e1775
+  RealmSwift: 01e8db006035f16003e6307ae8eae1adccce68db
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
-  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: a0f20619b83adef78070034680ad9c58a9373d90
+PODFILE CHECKSUM: 1565da641cfcb631e6211e5d65360db5ffdd8406
 
 COCOAPODS: 1.2.0.beta.1
