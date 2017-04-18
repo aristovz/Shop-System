@@ -40,8 +40,10 @@ class AllReportController: UIViewController, ChartViewDelegate {
     let gregorian = Calendar(identifier: .gregorian)
     
     var orders = [Order]()
+    var fullOrders = [FullOrder]()
     var showOrders = [ShowOrder]()
-    var currentOrders = [[Order]()]
+    var currentOrders = [[FullOrder]()]
+//    var currentOrders = [[Order]()]
     
     var numLabels = [String]()//, "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"]
     var xLabels = [String]()
@@ -62,18 +64,13 @@ class AllReportController: UIViewController, ChartViewDelegate {
         ordersLoadActivity.startAnimating()
         self.calendarTop.constant = 11
         self.closeOpenArrow.image = #imageLiteral(resourceName: "closeArrow")
-        API.OrdersManager.getAllOrdersWithSales { (orders) in
-            self.ordersLoadActivity.stopAnimating()
-            self.orders = orders
-            switch self.segmentation.selectedSegmentIndex {
+        
+        switch self.segmentation.selectedSegmentIndex {
             case 0: self.fillByDay()
             case 1: self.fillByMonth()
             case 2: self.fillByYear()
             default: break
-            }
-            //self.setChartData()
         }
-        
     }
     
     override func viewDidLoad() {
@@ -81,6 +78,27 @@ class AllReportController: UIViewController, ChartViewDelegate {
         
         segmentation.setImage(segmentation.imageForSegment(at: 3)!.resize(to: CGSize(width: 50, height: 17)), forSegmentAt: 3)
         
+        setChartView()
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = .right
+        calendarView.calendarHeaderView.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeLeft.direction = .left
+        calendarView.calendarHeaderView.addGestureRecognizer(swipeLeft)
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        panGesture.require(toFail: swipeLeft)
+        panGesture.require(toFail: swipeRight)
+        calendarView.calendarHeaderView.addGestureRecognizer(panGesture)
+        //calendarView.calendarHeaderView.isUserInteractionEnabled = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        calendarView.calendarHeaderView.addGestureRecognizer(tap)
+    }
+    
+    func setChartView() {
         //Set chartView
         collectionView.type = .linear
         chartView.delegate = self
@@ -117,23 +135,6 @@ class AllReportController: UIViewController, ChartViewDelegate {
         calendarView.appearance.imageOffset = CGPoint(x: 0, y: 2)
         calendarView.appearance.titleOffset = CGPoint(x: 0, y: 2)
         calendarView.swipeToChooseGesture.isEnabled = true
-        
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-        swipeRight.direction = .right
-        calendarView.calendarHeaderView.addGestureRecognizer(swipeRight)
-        
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-        swipeLeft.direction = .left
-        calendarView.calendarHeaderView.addGestureRecognizer(swipeLeft)
-        
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-        panGesture.require(toFail: swipeLeft)
-        panGesture.require(toFail: swipeRight)
-        calendarView.calendarHeaderView.addGestureRecognizer(panGesture)
-        //calendarView.calendarHeaderView.isUserInteractionEnabled = true
-        
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-        calendarView.calendarHeaderView.addGestureRecognizer(tap)
     }
     
     var calendarVisible: Bool {
@@ -247,6 +248,8 @@ class AllReportController: UIViewController, ChartViewDelegate {
     }
     
     @IBAction func segmentetionValueChanged(_ sender: UISegmentedControl) {
+        chartView.clear()
+        
         switch sender.selectedSegmentIndex {
             case 0: fillByDay()
             case 1: fillByMonth()
@@ -257,7 +260,9 @@ class AllReportController: UIViewController, ChartViewDelegate {
     }
     
     func fillShowOrder(index: Int) {
-        if index == 12 || index == 0 {
+        self.ordersLoadActivity.stopAnimating()
+        
+        if index == 12 || index == -1 {
             return
         }
         
@@ -275,58 +280,65 @@ class AllReportController: UIViewController, ChartViewDelegate {
         numLabels.removeAll()
         currentOrders.removeAll()
         
-        var ordersEntires = [ChartDataEntry]()
-        ordersEntires.append(ChartDataEntry(x: Double(0), y: 0))
+        let end: Date = Date()
+        let start: Date = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .month, value: -12, to: Date())!)
         
-        for k in 1..<13 {
-            let start = Calendar.current.date(byAdding: .month, value: Int(1 - k), to: Date().startOfMonth()!)
-            let end = Calendar.current.date(byAdding: .month, value: 1, to: start!)
+        self.ordersLoadActivity.startAnimating()
+        API.OrdersManager.getFullAllOrdersBetweenDays(start: start, end: end) { (orders) in
+
+            var ordersEntires = [ChartDataEntry]()
+            ordersEntires.append(ChartDataEntry(x: Double(0), y: 0))
             
-            var localOrders = orders.filter({$0.date >= start!})
-            localOrders = localOrders.filter({$0.date <= end!})
-            currentOrders.append(localOrders)
-            
-            var allSum = 0.0
-            var profit = 0.0
-            var countGuests = 0
-            for order in localOrders {
-                let localSum = order.getSum()
-                allSum += localSum.sum
-                profit += localSum.profit
-                countGuests += 1
+            for k in 1..<13 {
+                let start = Calendar.current.date(byAdding: .month, value: Int(1 - k), to: Date().startOfMonth()!)
+                let end = Calendar.current.date(byAdding: .month, value: 1, to: start!)
+                
+                var localOrders = orders.filter({$0.date >= start!})
+                localOrders = localOrders.filter({$0.date <= end!})
+                self.currentOrders.append(localOrders)
+                
+                var allSum = 0.0
+                var profit = 0.0
+                var countGuests = 0
+                for order in localOrders {
+                    let localSum = order.getSum()
+                    allSum += localSum.sum
+                    profit += localSum.profit
+                    countGuests += 1
+                }
+                let orderEntry = ChartDataEntry(x: Double(13 - k), y: allSum)
+                
+                let comp: Set<Calendar.Component> = [.month]
+                let monthIndex = Calendar.current.dateComponents(comp, from: start!).month!
+                self.xLabels.insert(Global.shortMonth[monthIndex]!, at: 0)
+                
+                self.currentOrders.insert(localOrders, at: 0)
+                self.showOrders.insert(ShowOrder(sum: allSum, profit: profit, countGuests: countGuests, avgSum: allSum / Double(countGuests == 0 ? 1 : countGuests)), at: 0)
+                ordersEntires.insert(orderEntry, at: 1)
+                self.numLabels.insert("\(monthIndex < 10 ? "0" : "")\(monthIndex)", at: 0)
             }
-            let orderEntry = ChartDataEntry(x: Double(13 - k), y: allSum)
             
-            let comp: Set<Calendar.Component> = [.month]
-            let monthIndex = Calendar.current.dateComponents(comp, from: start!).month!
-            xLabels.insert(Global.shortMonth[monthIndex]!, at: 0)
+            self.collectionView.reloadData()
+            self.collectionView.scrollToItem(at: self.numLabels.count - 2, animated: false)
+            self.collectionView.scrollToItem(at: self.numLabels.count - 1, animated: false)
+            self.fillShowOrder(index: self.collectionView.currentItemIndex)
             
-            currentOrders.insert(localOrders, at: 0)
-            showOrders.insert(ShowOrder(sum: allSum, profit: profit, countGuests: countGuests, avgSum: allSum / Double(countGuests == 0 ? 1 : countGuests)), at: 0)
-            ordersEntires.insert(orderEntry, at: 1)
-            numLabels.insert("\(monthIndex < 10 ? "0" : "")\(monthIndex)", at: 0)
+            if !self.ordersLoadActivity.isAnimating {
+                ordersEntires.append(ChartDataEntry(x: Double(13), y: 0))
+            
+                let chartDataSet = LineChartDataSet(values: ordersEntires, label: "Sum")
+                self.setChartDataSet(dataSet: chartDataSet)
+                
+                self.chartView.data = LineChartData(dataSets: [chartDataSet])
+                
+                var values = self.xLabels
+                values.insert("t", at: 0)
+                values.append("t")
+                self.chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: values)
+                
+                self.chartView.animate(yAxisDuration: 0.2, easingOption: .easeInCubic)
+            }
         }
-        
-        if !ordersLoadActivity.isAnimating {
-            ordersEntires.append(ChartDataEntry(x: Double(13), y: 0))
-        
-            let chartDataSet = LineChartDataSet(values: ordersEntires, label: "Sum")
-            setChartDataSet(dataSet: chartDataSet)
-            
-            chartView.data = LineChartData(dataSets: [chartDataSet])
-            
-            var values = xLabels
-            values.insert("t", at: 0)
-            values.append("t")
-            chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: values)
-            
-            chartView.animate(yAxisDuration: 0.2, easingOption: .easeInCubic)
-        }
-        
-        collectionView.reloadData()
-        collectionView.scrollToItem(at: self.numLabels.count - 2, animated: false)
-        collectionView.scrollToItem(at: self.numLabels.count - 1, animated: false)
-        fillShowOrder(index: collectionView.currentItemIndex)
     }
     
     func fillByDay() {
@@ -336,62 +348,72 @@ class AllReportController: UIViewController, ChartViewDelegate {
         numLabels.removeAll()
         currentOrders.removeAll()
         
-        var ordersEntires = [ChartDataEntry]()
-        ordersEntires.append(ChartDataEntry(x: Double(0), y: 0))
+        let end: Date = Date()
+        let start: Date = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -11, to: Date())!)
         
-        var dayStrings = [String]()
-        
-        for k in 1..<13 {
-            let start = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: Int(1 - k), to: Date())!)
-            let end = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: 1, to: start)!)
+        self.ordersLoadActivity.startAnimating()
+        API.OrdersManager.getFullAllOrdersBetweenDays(start: start, end: end) { (orders) in
+            var ordersEntires = [ChartDataEntry]()
+            ordersEntires.append(ChartDataEntry(x: Double(0), y: 0))
             
-            var localOrders = orders.filter({$0.date >= start})
-            localOrders = localOrders.filter({$0.date <= end})
+            var dayStrings = [String]()
             
-            var allSum = 0.0
-            var profit = 0.0
-            var countGuests = 0
-            for order in localOrders {
-                let localSum = order.getSum()
-                allSum += localSum.sum
-                profit += localSum.profit
-                countGuests += 1
+            for k in 1..<13 {
+                let start = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: Int(1 - k), to: Date())!)
+                //print("start - \(start)")
+                let end = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: 1, to: start)!)
+                //print("end - \(end)")
+                
+                var localOrders = orders.filter({$0.date >= start})
+                localOrders = localOrders.filter({$0.date <= end})
+                
+                var allSum = 0.0
+                var profit = 0.0
+                var countGuests = 0
+                for order in localOrders {
+                    let localSum = order.getSum()
+                    allSum += localSum.sum
+                    profit += localSum.profit
+                    countGuests += 1
+                }
+                let orderEntry = ChartDataEntry(x: Double(13 - k), y: allSum)
+                
+                let comp: Set<Calendar.Component> = [.month, .day]
+                let date = Calendar.current.dateComponents(comp, from: start)
+                let dayString = "\(date.day! < 10 ? "0" : "")\(date.day!)"
+                self.xLabels.insert(Global.shortMonth[date.month!]!, at: 0)
+                self.numLabels.insert(dayString, at: 0)
+                dayStrings.insert(dayString, at:0)
+                
+                self.currentOrders.insert(localOrders, at: 0)
+                
+                self.showOrders.insert(ShowOrder(sum: allSum, profit: profit, countGuests: countGuests, avgSum: allSum / Double(countGuests == 0 ? 1 : countGuests)), at: 0)
+                ordersEntires.insert(orderEntry, at: 1)
             }
-            let orderEntry = ChartDataEntry(x: Double(13 - k), y: allSum)
             
-            let comp: Set<Calendar.Component> = [.month, .day]
-            let date = Calendar.current.dateComponents(comp, from: start)
-            let dayString = "\(date.day! < 10 ? "0" : "")\(date.day!)"
-            xLabels.insert(Global.shortMonth[date.month!]!, at: 0)
-            numLabels.insert(dayString, at: 0)
-            dayStrings.insert(dayString, at:0)
+            self.collectionView.reloadData()
+            self.collectionView.scrollToItem(at: self.numLabels.count - 2, animated: false)
+            self.collectionView.scrollToItem(at: self.numLabels.count - 1, animated: false)
             
-            currentOrders.insert(localOrders, at: 0)
+            self.fillShowOrder(index: self.collectionView.currentItemIndex)
             
-            showOrders.insert(ShowOrder(sum: allSum, profit: profit, countGuests: countGuests, avgSum: allSum / Double(countGuests == 0 ? 1 : countGuests)), at: 0)
-            ordersEntires.insert(orderEntry, at: 1)
+            if !self.ordersLoadActivity.isAnimating {
+                ordersEntires.append(ChartDataEntry(x: Double(13), y: 0))
+                
+                let chartDataSet = LineChartDataSet(values: ordersEntires, label: "Sum")
+                self.setChartDataSet(dataSet: chartDataSet)
+                
+                self.chartView.data = LineChartData(dataSets: [chartDataSet])
+                
+                var values = dayStrings
+                values.insert("t", at: 0)
+                values.append("t")
+                self.chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: values)
+                
+                self.chartView.animate(yAxisDuration: 0.2, easingOption: .easeInCubic)
+            }
+
         }
-        
-        if !ordersLoadActivity.isAnimating {
-            ordersEntires.append(ChartDataEntry(x: Double(13), y: 0))
-            
-            let chartDataSet = LineChartDataSet(values: ordersEntires, label: "Sum")
-            setChartDataSet(dataSet: chartDataSet)
-            
-            chartView.data = LineChartData(dataSets: [chartDataSet])
-            
-            var values = dayStrings
-            values.insert("t", at: 0)
-            values.append("t")
-            chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: values)
-            
-            chartView.animate(yAxisDuration: 0.2, easingOption: .easeInCubic)
-        }
-        collectionView.reloadData()
-        collectionView.scrollToItem(at: self.numLabels.count - 2, animated: false)
-        collectionView.scrollToItem(at: self.numLabels.count - 1, animated: false)
-    
-        fillShowOrder(index: collectionView.currentItemIndex)
     }
     
     func fillByYear() {
@@ -401,56 +423,65 @@ class AllReportController: UIViewController, ChartViewDelegate {
         numLabels.removeAll()
         currentOrders.removeAll()
         
-        var ordersEntires = [ChartDataEntry]()
-        ordersEntires.append(ChartDataEntry(x: Double(0), y: 0))
+        let end: Date = Date()
+        let start: Date = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .year, value: -12, to: Date())!)
         
-        for k in 1..<13 {
-            let start = Calendar.current.date(byAdding: .year, value: Int(1 - k), to: Date().startOfMonth()!)
-            let end = Calendar.current.date(byAdding: .year, value: 1, to: start!)
+        self.ordersLoadActivity.startAnimating()
+        API.OrdersManager.getFullAllOrdersBetweenDays(start: start, end: end) { (orders) in
+
+            var ordersEntires = [ChartDataEntry]()
+            ordersEntires.append(ChartDataEntry(x: Double(0), y: 0))
             
-            var localOrders = orders.filter({$0.date >= start!})
-            localOrders = localOrders.filter({$0.date <= end!})
-            currentOrders.append(localOrders)
-            
-            var allSum = 0.0
-            var profit = 0.0
-            var countGuests = 0
-            for order in localOrders {
-                let localSum = order.getSum()
-                allSum += localSum.sum
-                profit += localSum.profit
-                countGuests += 1
+            for k in 1..<13 {
+                let start = Calendar.current.date(byAdding: .year, value: Int(1 - k), to: Date().startOfMonth()!)
+                let end = Calendar.current.date(byAdding: .year, value: 1, to: start!)
+                
+                var localOrders = orders.filter({$0.date >= start!})
+                localOrders = localOrders.filter({$0.date <= end!})
+                self.currentOrders.append(localOrders)
+                
+                var allSum = 0.0
+                var profit = 0.0
+                var countGuests = 0
+                for order in localOrders {
+                    let localSum = order.getSum()
+                    allSum += localSum.sum
+                    profit += localSum.profit
+                    countGuests += 1
+                }
+                let orderEntry = ChartDataEntry(x: Double(13 - k), y: allSum)
+                
+                let comp: Set<Calendar.Component> = [.year]
+                let year = Calendar.current.dateComponents(comp, from: start!).year!
+                //xLabels.insert("\(year)", at: 0)
+                
+                self.currentOrders.insert(localOrders, at: 0)
+                self.showOrders.insert(ShowOrder(sum: allSum, profit: profit, countGuests: countGuests, avgSum: allSum / Double(countGuests == 0 ? 1 : countGuests)), at: 0)
+                ordersEntires.insert(orderEntry, at: 1)
+                self.numLabels.insert("\(year)", at: 0)
             }
-            let orderEntry = ChartDataEntry(x: Double(13 - k), y: allSum)
             
-            let comp: Set<Calendar.Component> = [.year]
-            let year = Calendar.current.dateComponents(comp, from: start!).year!
-            //xLabels.insert("\(year)", at: 0)
+            self.collectionView.reloadData()
+            self.collectionView.scrollToItem(at: self.numLabels.count - 2, animated: false)
+            self.collectionView.scrollToItem(at: self.numLabels.count - 1, animated: false)
+            self.fillShowOrder(index: self.collectionView.currentItemIndex)
             
-            currentOrders.insert(localOrders, at: 0)
-            showOrders.insert(ShowOrder(sum: allSum, profit: profit, countGuests: countGuests, avgSum: allSum / Double(countGuests == 0 ? 1 : countGuests)), at: 0)
-            ordersEntires.insert(orderEntry, at: 1)
-            numLabels.insert("\(year)", at: 0)
+            if !self.ordersLoadActivity.isAnimating {
+                ordersEntires.append(ChartDataEntry(x: Double(13), y: 0))
+                
+                let chartDataSet = LineChartDataSet(values: ordersEntires, label: "Sum")
+                self.setChartDataSet(dataSet: chartDataSet)
+                
+                self.chartView.data = LineChartData(dataSets: [chartDataSet])
+                
+                var values = self.numLabels
+                values.insert("t", at: 0)
+                values.append("t")
+                self.chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: values)
+                
+                self.chartView.animate(yAxisDuration: 0.2, easingOption: .easeInCubic)
+            }
         }
-        if !ordersLoadActivity.isAnimating {
-            ordersEntires.append(ChartDataEntry(x: Double(13), y: 0))
-            
-            let chartDataSet = LineChartDataSet(values: ordersEntires, label: "Sum")
-            setChartDataSet(dataSet: chartDataSet)
-            
-            chartView.data = LineChartData(dataSets: [chartDataSet])
-            
-            var values = numLabels
-            values.insert("t", at: 0)
-            values.append("t")
-            chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: values)
-            
-            chartView.animate(yAxisDuration: 0.2, easingOption: .easeInCubic)
-        }
-        collectionView.reloadData()
-        collectionView.scrollToItem(at: self.numLabels.count - 2, animated: false)
-        collectionView.scrollToItem(at: self.numLabels.count - 1, animated: false)
-        fillShowOrder(index: collectionView.currentItemIndex)
     }
     
     func setChartDataSet(dataSet: LineChartDataSet) {
@@ -481,7 +512,7 @@ class AllReportController: UIViewController, ChartViewDelegate {
         if self.ordersLoadActivity.isAnimating { return }
         
         let ordersVC = Global.mainStoryBoard.instantiateViewController(withIdentifier: "reportVC") as! ReportController
-        ordersVC.orders = self.currentOrders[collectionView.currentItemIndex]
+        ordersVC.fullOrders = self.currentOrders[collectionView.currentItemIndex]
         ordersVC.offline = true
         
         let navController = UINavigationController(rootViewController: ordersVC)

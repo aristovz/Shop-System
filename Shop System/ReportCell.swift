@@ -23,9 +23,9 @@ class ReportCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var sales = [Sale]()
-    var products = [Product]()
+//  var sales = [Sale]()
+    var sales = [FullSale]()
+    //var products = [Product]()
     var client: Client?
 
     var summa = 0.0
@@ -45,7 +45,6 @@ class ReportCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
@@ -88,7 +87,7 @@ extension ReportCell: UITableViewDataSource, UITableViewDelegate {
         
         let discount = client?.discount ?? 0
         let currentSale = sales[indexPath.row]
-        let product = products[indexPath.row]
+        let product = currentSale.product
         cell.productName.text = product.name
         cell.countLabel.text = "\(currentSale.count) \(product.type == 0 ? "гр" : "шт")"
         

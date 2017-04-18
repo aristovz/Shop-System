@@ -16,7 +16,7 @@ target 'Shop-System' do
 end
 
 post_install do |installer|
-  Dir.glob(installer.sandbox.target_support_files_root + "Pods-*/Framework/*.sh").each do |script|
+  Dir.glob(installer.sandbox.target_support_files_root + "Pods-*/Frameworks/*.sh").each do |script|
     flag_name = File.basename(script, ".sh") + "-Installation-Flag"
     folder = "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
     file = File.join(folder, flag_name)

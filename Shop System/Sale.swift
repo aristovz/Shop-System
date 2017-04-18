@@ -25,3 +25,21 @@ class Sale {
         self.productID = productID
     }
 }
+
+class FullSale {
+    let id: Int
+    let product: Product
+    let price: Double
+    let initialPrice: Double
+    let count: Int
+    let orderID: Int
+    
+    init(id: Int, product: Product, price: Double, initialPrice: Double, count: Int, orderID: Int) {
+        self.id = id
+        self.orderID = orderID
+        self.price = price
+        self.initialPrice = initialPrice
+        self.count = count
+        self.product = product
+    }
+}

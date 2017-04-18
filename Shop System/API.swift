@@ -37,6 +37,143 @@ class API {
     }
     
     class OrdersManager {
+        class func getFullAllOrdersBetweenDays(start: Date, end: Date, requestEnd:@escaping ([FullOrder]) -> ()) {
+            var orders = [FullOrder]()
+            let formater = DateFormatter()
+            formater.calendar = Calendar.current
+            formater.timeZone = TimeZone.current
+            formater.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            
+            let startString = formater.string(from: start)
+            let endString = formater.string(from: end)
+
+            print("\(Global.urlPath)orders.getFullByDate?start=\(startString)&end=\(endString)&access_token=\(Global.access_token!)")
+            Alamofire.request(Global.urlPath + "orders.getFullByDate", method: .get, parameters: ["start" : startString, "end": endString, "access_token" : Global.access_token!]).responseJSON { (response) in
+                //print(response.result.value ?? "123")
+                
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    for order in json["orders"].arrayValue {
+                        
+                        var client: Client? = nil
+                        if order["clientID"].int != nil {
+                            let clientJSON = order["client"]
+                            client = Client(id: clientJSON["cid"].intValue, name: clientJSON["name"].stringValue, phone: clientJSON["phone"].stringValue, discount: clientJSON["discount"].intValue, card: clientJSON["discount"].intValue, summa: clientJSON["discount"].doubleValue)
+                        }
+                        
+                        let workerJSON = order["worker"]
+                        let worker = Worker(id: workerJSON["id"].intValue, name: workerJSON["name"].stringValue, phone: workerJSON["phone"].stringValue)
+                        
+                        let currentOrder = FullOrder(id: order["id"].intValue, client: client, worker: worker, date: order["date"].stringValue.dateFromISO8601!, discount: order["discount"].intValue)
+                        
+                        for sale in order["sales"].arrayValue {
+                            let productJSON = sale["product"]
+                            let product = Product(id: productJSON["id"].intValue, name: productJSON["name"].stringValue, type: productJSON["type"].intValue, categoryID: productJSON["categoryID"].intValue, price: productJSON["price"].doubleValue, initialPrice: productJSON["initialPrice"].doubleValue)
+                            let currentSale = FullSale(id: sale["id"].intValue, product: product, price: sale["price"].doubleValue, initialPrice: sale["initialPrice"].doubleValue, count: sale["count"].intValue, orderID: sale["orderID"].intValue)
+                            
+                            currentOrder.sales.append(currentSale)
+                        }
+                        orders.append(currentOrder)
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+                
+                requestEnd(orders)
+            }
+        }
+        
+        class func getFullAllOrdersInDays(days: [Date], requestEnd:@escaping ([FullOrder]) -> ()) {
+            var orders = [FullOrder]()
+            let formater = DateFormatter()
+            formater.calendar = Calendar.current
+            formater.timeZone = TimeZone.current
+            formater.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            
+            let dates = days.map { formater.string(from: $0) }
+            //print("\(Global.urlPath)orders.getFullAllInDates?days=\(JSON(dates))&access_token=\(Global.access_token!)")
+            
+            
+            Alamofire.request(Global.urlPath + "orders.getFullAllInDates", method: .get, parameters: ["days" : JSON(dates), "access_token" : Global.access_token!]).responseJSON { (response) in
+               //print(response.result.value ?? "123")
+                
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    for order in json["orders"].arrayValue {
+                        
+                        var client: Client? = nil
+                        if order["clientID"].int != nil {
+                            let clientJSON = order["client"]
+                            client = Client(id: clientJSON["cid"].intValue, name: clientJSON["name"].stringValue, phone: clientJSON["phone"].stringValue, discount: clientJSON["discount"].intValue, card: clientJSON["discount"].intValue, summa: clientJSON["discount"].doubleValue)
+                        }
+                        
+                        let workerJSON = order["worker"]
+                        let worker = Worker(id: workerJSON["id"].intValue, name: workerJSON["name"].stringValue, phone: workerJSON["phone"].stringValue)
+                        
+                        let currentOrder = FullOrder(id: order["id"].intValue, client: client, worker: worker, date: order["date"].stringValue.dateFromISO8601!, discount: order["discount"].intValue)
+                        
+                        for sale in order["sales"].arrayValue {
+                            let productJSON = sale["product"]
+                            let product = Product(id: productJSON["id"].intValue, name: productJSON["name"].stringValue, type: productJSON["type"].intValue, categoryID: productJSON["categoryID"].intValue, price: productJSON["price"].doubleValue, initialPrice: productJSON["initialPrice"].doubleValue)
+                            let currentSale = FullSale(id: sale["id"].intValue, product: product, price: sale["price"].doubleValue, initialPrice: sale["initialPrice"].doubleValue, count: sale["count"].intValue, orderID: sale["orderID"].intValue)
+                            
+                            currentOrder.sales.append(currentSale)
+                        }
+                        orders.append(currentOrder)
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+                
+                requestEnd(orders)
+            }
+        }
+        
+        class func getFullAllOrders(requestEnd:@escaping ([FullOrder]) -> ()) {
+            var orders = [FullOrder]()
+            let formater = DateFormatter()
+            formater.calendar = Calendar.current
+            formater.timeZone = TimeZone.current
+            formater.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            
+            Alamofire.request(Global.urlPath + "orders.getFullAll", method: .get, parameters: ["access_token" : Global.access_token!]).responseJSON { (response) in
+                // print(response.result.value ?? "123")
+                
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    for order in json["orders"].arrayValue {
+                        
+                        var client: Client? = nil
+                        if order["clientID"].int != nil {
+                            let clientJSON = order["client"]
+                            client = Client(id: clientJSON["cid"].intValue, name: clientJSON["name"].stringValue, phone: clientJSON["phone"].stringValue, discount: clientJSON["discount"].intValue, card: clientJSON["discount"].intValue, summa: clientJSON["discount"].doubleValue)
+                        }
+                        
+                        let workerJSON = order["worker"]
+                        let worker = Worker(id: workerJSON["id"].intValue, name: workerJSON["name"].stringValue, phone: workerJSON["phone"].stringValue)
+                        
+                        let currentOrder = FullOrder(id: order["id"].intValue, client: client, worker: worker, date: order["date"].stringValue.dateFromISO8601!, discount: order["discount"].intValue)
+                        
+                        for sale in order["sales"].arrayValue {
+                            let productJSON = sale["product"]
+                            let product = Product(id: productJSON["id"].intValue, name: productJSON["name"].stringValue, type: productJSON["type"].intValue, categoryID: productJSON["categoryID"].intValue, price: productJSON["price"].doubleValue, initialPrice: productJSON["initialPrice"].doubleValue)
+                            let currentSale = FullSale(id: sale["id"].intValue, product: product, price: sale["price"].doubleValue, initialPrice: sale["initialPrice"].doubleValue, count: sale["count"].intValue, orderID: sale["orderID"].intValue)
+                            
+                            currentOrder.sales.append(currentSale)
+                        }
+                        orders.append(currentOrder)
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+                
+                requestEnd(orders)
+            }
+        }
+    
         class func getAllOrders(requestEnd:@escaping ([Order]) -> ()) {
             var orders = [Order]()
             Alamofire.request(Global.urlPath + "orders.getAll", method: .get, parameters: ["access_token" : Global.access_token!]).responseJSON { (response) in
@@ -93,7 +230,7 @@ class API {
                 formater.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 
                 let dates = days.map { formater.string(from: $0) }
-                
+            
                 Alamofire.request(Global.urlPath + "orders.getAllInDates", method: .get, parameters: ["days" : JSON(dates), "access_token" : Global.access_token!]).responseJSON { (response) in
                     //print(response.result.value ?? "123")
                     

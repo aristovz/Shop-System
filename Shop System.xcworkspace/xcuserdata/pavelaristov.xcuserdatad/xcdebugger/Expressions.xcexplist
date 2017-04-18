@@ -63,6 +63,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "specialized static API.OrdersManager.(getFullAllOrdersInDays(days : [Date], requestEnd : ([FullOrder]) -&gt; ()) -&gt; ()).(closure #2):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ReportCell.observeValue(forKeyPath : String?, of : Any?, change : [NSKeyValueChangeKey : Any]?, context : UnsafeMutableRawPointer?) -&gt; ():ReportCell.swift">
          <PersistentStrings>
             <PersistentString
@@ -189,6 +197,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "static API.OrdersManager.(getFullAllOrdersBetweenDays(start : Date, end : Date, requestEnd : ([FullOrder]) -&gt; ()) -&gt; ()).(closure #1):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static API.OrdersManager.(getFullAllOrdersInDays(days : [Date], requestEnd : ([FullOrder]) -&gt; ()) -&gt; ()).(closure #2):API.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ReportCell.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ReportCell.swift">
          <PersistentStrings>
             <PersistentString
@@ -228,6 +252,14 @@
          <PersistentStrings>
             <PersistentString
                value = "currentChannel[&quot;name&quot;].stringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllReportController.(fillByDay() -&gt; ()).(closure #1):AllReportController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -606,7 +638,7 @@
          contextName = "static API.OrdersManager.(getAllOrdersWithSalesInDays(days : [Date], requestEnd : ([Order]) -&gt; ()) -&gt; ()).(closure #1).(closure #2):API.swift">
          <PersistentStrings>
             <PersistentString
-               value = "print(json[&quot;orders&quot;].arrayValue[0][&quot;clientID&quot;].intValue)">
+               value = "json[&quot;orders&quot;][3][&quot;clientID&quot;].intValue">
             </PersistentString>
             <PersistentString
                value = "print(response.result.value ?? &quot;123&quot;)">
@@ -615,7 +647,7 @@
                value = "json[&quot;orders&quot;][3][&quot;date&quot;].string">
             </PersistentString>
             <PersistentString
-               value = "json[&quot;orders&quot;][3][&quot;clientID&quot;].intValue">
+               value = "print(json[&quot;orders&quot;].arrayValue[0][&quot;clientID&quot;].intValue)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -658,13 +690,13 @@
          contextName = "AllReportController.respondToSwipeGesture(gesture : UIGestureRecognizer) -&gt; ():AllReportController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "gesture.superclass!">
+               value = "swipeGesture.direction">
             </PersistentString>
             <PersistentString
                value = "tapGesture.location(in: calendarView.calendarHeaderView)">
             </PersistentString>
             <PersistentString
-               value = "swipeGesture.direction">
+               value = "gesture.superclass!">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

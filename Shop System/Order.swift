@@ -37,3 +37,33 @@ class Order {
         return (allSum, profit)
     }
 }
+
+class FullOrder {
+    let id: Int
+    var client: Client?
+    var worker: Worker
+    let date: Date
+    let discount: Int
+    var sales = [FullSale]()
+    
+    init(id: Int, client: Client? = nil, worker: Worker, date: Date, discount: Int) {
+        self.id = id
+        self.client = client
+        self.worker = worker
+        self.date = date
+        self.discount = discount
+    }
+    
+    func getSum() -> (sum: Double, profit: Double){
+        var allSum = 0.0
+        var profit = 0.0
+        
+        for sale in sales {
+            let localSum = sale.price * Double(sale.count) - (sale.price * Double(sale.count * self.discount)) / 100
+            allSum += localSum
+            profit += localSum - sale.initialPrice * Double(sale.count)
+        }
+        
+        return (allSum, profit)
+    }
+}

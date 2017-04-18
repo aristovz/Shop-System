@@ -10,6 +10,7 @@ import UIKit
 
 class ReportController: UITableViewController {
     var orders: [Order]?
+    var fullOrders = [FullOrder]()
     var workers = [Worker]()
     var sales = [Sale]()
     var categories = [Category]()
@@ -43,7 +44,7 @@ class ReportController: UITableViewController {
         tabBar?.items![3].title = "Сканер"
         
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(ReportController.refreshData), for: UIControlEvents.valueChanged)
+        refreshControl.addTarget(self, action: #selector(ReportController.refreshFullData), for: UIControlEvents.valueChanged)
         self.refreshControl = refreshControl
     }
     
@@ -60,6 +61,26 @@ class ReportController: UITableViewController {
             label.textColor = UIColor.lightBlueTextColor()
             label.tag = 1
             return label
+        }
+    }
+    
+    func refreshFullData() {
+        API.OrdersManager.getFullAllOrdersInDays(days: self.dates) { (orders) in
+            //print(orders)
+            //self.fullOrders = orders
+            self.fullOrders = orders.sorted { $0.date > $1.date }
+            
+            if (orders.count == 0) {
+                self.tableView.addSubview(self.noDataLabel)
+            }
+            else {
+                if let label = self.tableView.viewWithTag(1) as? UILabel {
+                    label.removeFromSuperview()
+                }
+            }
+            
+            self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
         }
     }
     
@@ -149,7 +170,7 @@ extension ReportController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return orders == nil ? 0 : orders!.count
+        return fullOrders.count //orders == nil ? 0 : orders!.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -163,22 +184,41 @@ extension ReportController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reportCell") as! ReportCell
+
+        let currentOrder = fullOrders[indexPath.section]
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+
+        cell.dateLabel.text = "\(currentOrder.date.timeAgo)"
+        cell.sales = currentOrder.sales
+        cell.client = currentOrder.client
+       
+        count = cell.sales.count
         
-        if let currentOrder = orders?[indexPath.section] {
-            let formatter = DateFormatter()
-            formatter.dateStyle = .medium
-            formatter.timeStyle = .medium
-
-            cell.dateLabel.text = "\(orders![indexPath.section].date.timeAgo)"//formatter.string(from: orders![indexPath.section].date)
-            cell.sales = currentOrder.sales
-            cell.client = currentOrder.clientID != nil ? clients.first(where: {$0.id == currentOrder.clientID}) : nil
-            cell.products = currentOrder.sales.map { sale in products.first { $0.id == sale.productID }! }
-
-            count = cell.sales.count
-            
-            cell.updateData()
-        }
+        cell.updateData()
         
         return cell
     }
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "reportCell") as! ReportCell
+//        
+//        if let currentOrder = orders?[indexPath.section] {
+//            let formatter = DateFormatter()
+//            formatter.dateStyle = .medium
+//            formatter.timeStyle = .medium
+//
+//            cell.dateLabel.text = "\(orders![indexPath.section].date.timeAgo)"//formatter.string(from: orders![indexPath.section].date)
+//            cell.sales = currentOrder.sales
+//            cell.client = currentOrder.clientID != nil ? clients.first(where: {$0.id == currentOrder.clientID}) : nil
+//            cell.products = currentOrder.sales.map { sale in products.first { $0.id == sale.productID }! }
+//
+//            count = cell.sales.count
+//            
+//            cell.updateData()
+//        }
+//        
+//        return cell
+//    }
 }
